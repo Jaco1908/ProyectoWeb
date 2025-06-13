@@ -93,3 +93,141 @@ nav a.catalogo {
     visibility: visible;
     transform: translateY(0);
 }
+/* Contenido del menú desplegable */
+.dropdown-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 25px;
+}
+
+/* Columnas del menú */
+.dropdown-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Títulos de categorías */
+.category-title {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #e41e26;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #706e6e;
+    text-transform: uppercase;
+    text-align:left;
+}
+
+/* Enlaces dentro del menú */
+.dropdown-link {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.6rem;
+    padding: 2px;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    border-radius: 2px;
+    text-align: left;
+}
+
+.dropdown-link:hover {
+    color: #0e3b7c;
+    padding-left: 8px;
+    background-color: #f8f9fa;
+}
+
+/* Flecha indicadora para menús que se abren hacia la izquierda */
+.nav-container:nth-last-child(-n+3) .dropdown-menu::before,
+.nav-container:last-child .dropdown-menu::before,
+.nav-container:nth-last-child(2) .dropdown-menu::before,
+.dropdown-right .dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 20px;
+    left: auto;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+}
+
+/* Flecha normal para menús que se abren hacia la derecha */
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+}
+
+/* Prevenir que el menú se salga de la pantalla */
+@media (max-width: 1200px) {
+    .dropdown-menu {
+        min-width: 700px;
+    }
+    
+    /* Forzar apertura hacia la izquierda en pantallas más pequeñas */
+    .nav-container:nth-child(n+4) .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    .dropdown-menu {
+        min-width: 600px;
+    }
+    
+    .dropdown-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Todos los menús se abren hacia la izquierda en tablets */
+    .nav-container:nth-child(n+3) .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .dropdown-menu {
+        min-width: 90vw;
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    
+    .nav-container:hover .dropdown-menu {
+        transform: translateX(-50%) translateY(0);
+    }
+    
+    .dropdown-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    /* Centrar la flecha en móviles */
+    .dropdown-menu::before {
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .dropdown-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .dropdown-menu {
+        min-width: 95vw;
+    }
+}
