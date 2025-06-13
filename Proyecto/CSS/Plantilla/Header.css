@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 2px 2%;
+    max-width: 100%;
+}
+
+header img {
+    width: 130px;
+}
+
+header h1 {
+    font-family: 'Fugaz One', sans-serif;
+    color: #0e3b7c;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.login-btn {
+    background-color: #1e4679;
+    color: white;
+    padding: 8px 3px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: bold;
+}
+
+.login-btn img {
+    width: 20px;
+    height: 20px;
+}
