@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Verificar si se enviaron los datos por POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = htmlspecialchars($_POST["nombre"]);
@@ -86,7 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<p><strong>💬 Comentarios adicionales:</strong> (No se ingresaron comentarios)</p>";
     }
 
-    echo "<a href='servicios.html'>⬅ Volver a Servicios</a>
+    echo "<a href='../ServiciosTecnicos/servicios.php'>⬅ Volver a Servicios</a>
     </div>
 
     <!-- PIE DE PÁGINA -->
@@ -135,7 +136,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </html>";
 } else {
     // Redirigir si se accede sin enviar datos
-    header("Location: ../Paginas/servicios.html");
+    header("Location: ../ServiciosTecnicos/servicios.php");
     exit();
 }
 ?>
