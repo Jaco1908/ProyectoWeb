@@ -3,7 +3,7 @@ session_start();
 
 // Si no hay datos en sesión, redirige al login
 if (!isset($_SESSION['email'])) {
-    header("Location: index.html"); // O tu página de login
+    header("Location: index.php"); // O tu página de login
     exit();
 }
 ?>
@@ -16,7 +16,6 @@ if (!isset($_SESSION['email'])) {
     <link rel="stylesheet" href="../CSS/style_sesion.css">
 </head>
 <body>
-
     <style>
         body { font-family: Arial, sans-serif; background: #f0f2f5; margin: 0; padding: 0; }
         .profile-container {
@@ -29,6 +28,7 @@ if (!isset($_SESSION['email'])) {
     </style>
     <section class="profile-container">
         <h2>Perfil de Usuario</h2>
+        <p><span class="label">Nombre de Uusario:</span> <?php echo htmlspecialchars($_SESSION['nombre']); ?></p>
         <p><span class="label">Correo:</span> <?php echo htmlspecialchars($_SESSION['email']); ?></p>
         <p><span class="label">Contraseña:</span> <?php echo htmlspecialchars($_SESSION['password']); ?></p>
     </section>

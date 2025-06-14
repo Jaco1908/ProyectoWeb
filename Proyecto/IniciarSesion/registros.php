@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,7 +10,6 @@
     <link rel="stylesheet" href="../CSS/style_sesion.css">
 </head>
 <body>
-
     <!-- Sección principal de inicio de sesión -->
     <section class="login-main">
         <section class="login-wrapper">
@@ -20,10 +22,10 @@
 
             <!-- Lado Derecho: Formulario de inicio de sesión -->
             <section class="login-container">
-                <img src="../Image/Logo2.png" alt="Logo" class="login-logo">
+                <img src="../Image/Logo.png" alt="Logo" class="login-logo">
                 <h1 class="login-title">Crear Cuenta</h1>
                 <form class="login-form" action="conexion.php" method="POST">
-                    <label for="nombre">Nombre:</label>
+                    <label for="nombre">Nombre de usuario:</label>
                     <input type="text" id="nomnbre" name="nombre" required>
 
                     <label for="email">Correo Electrónico:</label>
@@ -39,7 +41,6 @@
                         <input type="checkbox" id="remember" name="remember">
                         <label for="remember">Recordarme</label>
                     </div>
-
                     <button type="submit">Crear Cuenta</button>
                 </form>
 

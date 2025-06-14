@@ -1,3 +1,7 @@
+<?php
+session_start();
+$error = isset($_GET['error']) ? $_GET['error'] : "";
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -20,11 +24,11 @@
 
             <!-- Lado Derecho: Formulario de inicio de sesión -->
             <section class="login-container">
-                <img src="../Image/Logo2.png" alt="Logo" class="login-logo">
+                <img src="../Image/Logo.png" alt="Logo" class="login-logo">
                 <h1 class="login-title">Iniciar Sesión</h1>
                 <form class="login-form" action="conexion.php" method="POST">
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="nombre">Nombre de usuario</label>
+                    <input type="nombre" id="nombre" name="nombre" required>
 
                     <label for="password">Contraseña:</label>
                     <input type="password" id="password" name="password" required>

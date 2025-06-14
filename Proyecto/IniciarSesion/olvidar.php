@@ -20,7 +20,7 @@
 
             <!-- Lado Derecho: Formulario de inicio de sesión -->
             <section class="login-container">
-                <img src="../Image/Logo2.png" alt="Logo" class="login-logo">
+                <img src="../Image/Logo.png" alt="Logo" class="login-logo">
                 <h1 class="login-title">Cambiar Clave</h1>
                 <form class="login-form" action="conexion.php" method="POST">
                     <label for="email">Correo Electrónico:</label>
