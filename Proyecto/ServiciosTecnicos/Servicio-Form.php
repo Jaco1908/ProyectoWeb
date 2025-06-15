@@ -12,6 +12,9 @@ session_start();
   <link rel="shortcut icon" href="../Image/Logo.png" />
   <link rel="stylesheet" href="../CSS/style_servicio.css" />
   <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="../CSS/Plantilla/Footer.css">
+  <link rel="stylesheet" href="../CSS/Plantilla/Header.css">
+  <link rel="stylesheet" href="../CSS/Plantilla/Nav.css">
 </head>
 
 <body>
