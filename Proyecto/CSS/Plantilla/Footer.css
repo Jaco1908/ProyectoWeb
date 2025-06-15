@@ -1,176 +1,185 @@
-* {
-    margin: 0;
-    padding: 0;
+/* Footer.css - Versión para tu estructura actual */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Concert+One&family=Fugaz+One&family=Gruppo&family=Limelight&family=Squada+One&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ===== RESET Y ESTILOS BASE ===== */
+/* Reset con alta especificidad */
+html body footer {
+    all: initial;
+    font-family: 'Tomorrow', sans-serif;
+    display: block;
     box-sizing: border-box;
 }
-/* Footer */
-footer {
-    background-color: #16345b;
-    color: white;
-    padding: 20px;
-    font-family: 'Tomorrow', sans-serif;
+
+/* Estilos base del footer */
+html body footer {
+    background-color: #16345b !important;
+    color: white !important;
+    padding: 20px 0 0 0 !important;
+    width: 100% !important;
+    margin-top: 40px !important;
 }
 
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 8px;
-    flex-wrap: wrap;
-    gap: 30px;
+/* ===== CONTENEDOR PRINCIPAL ===== */
+html body footer .footer-container {
+    display: flex !important;
+    justify-content: space-around !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+    flex-wrap: wrap !important;
+    gap: 30px !important;
+    box-sizing: border-box !important;
 }
 
-.footer-section {
-    margin: 0;
-    line-height: 1.4;
-    max-width: 300px;
+/* ===== SECCIONES DEL FOOTER ===== */
+html body footer .footer-section {
+    margin: 0 !important;
+    line-height: 1.6 !important;
+    max-width: 300px !important;
+    flex: 1 1 250px !important;
+    box-sizing: border-box !important;
 }
 
-.footer-logo {
-    width: 100px;
-    flex-shrink: 0;
+/* Sección del logo */
+html body footer .logo-section {
+    display: flex !important;
+    flex-direction: column !important;
 }
 
-.footer-description {
-    font-family: 'Tomorrow', sans-serif;
-    font-size: 0.75rem;
-    line-height: 1;
-    color: rgba(255, 255, 255, 0.85);
-    margin: 0;
-    max-width: 180px;
-    padding-left: 15px;
-    border-left: 2px solid rgba(255, 255, 255, 0.2);
-    margin-left: 15px;
+html body footer .footer-logo {
+    width: 100px !important;
+    height: auto !important;
+    margin-bottom: 15px !important;
 }
 
-.footer-title {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    color: white;
-    position: relative;
-    padding-bottom: 8px;
+html body footer .footer-description {
+    font-size: 0.75rem !important;
+    line-height: 1.4 !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    margin: 0 !important;
+    padding-left: 15px !important;
+    border-left: 2px solid rgba(255, 255, 255, 0.2) !important;
 }
 
-.footer-title::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 40px;
-    height: 2px;
-    background-color: #e41e26;
+/* Sección de ubicación */
+html body footer .location-section {
+    display: flex !important;
+    flex-direction: column !important;
 }
 
-.location-info {
-    margin-bottom: 15px;
+html body footer .footer-title {
+    font-size: 1.1rem !important;
+    margin-bottom: 15px !important;
+    color: white !important;
+    position: relative !important;
+    padding-bottom: 8px !important;
+    font-weight: 600 !important;
 }
 
-.location-name {
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-size: 0.95rem;
+html body footer .footer-title::after {
+    content: '' !important;
+    position: absolute !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 40px !important;
+    height: 2px !important;
+    background-color: #e41e26 !important;
 }
 
-.location-address,
-.location-phone {
-    font-size: 0.85rem;
-    margin: 5px 0;
-    line-height: 1.4;
+html body footer .location-info {
+    margin-bottom: 15px !important;
 }
 
-.map-iframe {
-    border: none;
-    border-radius: 6px;
-    margin-bottom: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+html body footer .location-name {
+    font-weight: bold !important;
+    margin-bottom: 5px !important;
+    font-size: 0.95rem !important;
 }
 
-.map-links {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.8rem;
+html body footer .location-address,
+html body footer .location-phone {
+    font-size: 0.85rem !important;
+    margin: 5px 0 !important;
+    line-height: 1.4 !important;
+    display: block !important;
 }
 
-.map-link {
-    color: #a0c4ff;
-    text-decoration: none;
-    transition: color 0.3s;
+/* Sección de redes sociales */
+html body footer .social-section {
+    display: flex !important;
+    flex-direction: column !important;
 }
 
-.map-link:hover {
-    color: white;
-    text-decoration: underline;
+html body footer .social-icons {
+    display: flex !important;
+    gap: 15px !important;
+    margin-bottom: 25px !important;
 }
 
-.map-divider {
-    color: #a0c4ff;
-    font-size: 0.7rem;
+html body footer .social-link {
+    display: inline-block !important;
+    transition: transform 0.3s ease !important;
 }
 
-.social-icons {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 25px;
+html body footer .social-link:hover {
+    transform: translateY(-3px) !important;
 }
 
-.social-link img {
-    width: 28px;
-    height: 28px;
-    transition: transform 0.3s;
+html body footer .social-link img {
+    width: 28px !important;
+    height: 28px !important;
 }
 
-.social-link:hover img {
-    transform: scale(1.1);
+/* ===== COPYRIGHT ===== */
+html body footer .footer-copyright {
+    font-size: 0.75rem !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    text-align: center !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 15px 0 !important;
+    margin-top: 20px !important;
+    width: 100% !important;
 }
 
-.footer-copyright {
-    font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.7);
-    margin-top: 20px;
-    box-align: center;
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 15px;
-}
-
-/* Responsive Design */
+/* ===== MEDIA QUERIES ===== */
 @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    html body footer .footer-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 20px !important;
     }
 
-    .footer-section {
-        text-align: center;
+    html body footer .footer-section {
+        text-align: center !important;
+        max-width: 100% !important;
+        align-items: center !important;
     }
 
-    .footer-title::after {
-        left: 50%;
-        transform: translateX(-50%);
+    html body footer .footer-title::after {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
-    .social-icons {
-        justify-content: center;
+    html body footer .footer-description {
+        margin: 10px auto !important;
+        border-left: none !important;
+        padding-left: 0 !important;
+        border-top: 2px solid rgba(255, 255, 255, 0.2) !important;
+        padding-top: 10px !important;
     }
 
-    .footer-description {
-        margin: 0 auto 20px;
-    }
-
-    .map-links {
-        justify-content: center;
+    html body footer .logo-section {
+        align-items: center !important;
     }
 }
 
 @media (max-width: 480px) {
-    .footer-section {
-        min-width: 100%;
+    html body footer .footer-container {
+        padding: 20px 15px !important;
     }
-
-    .map-iframe {
-        width: 100%;
+    
+    html body footer .footer-section {
+        flex: 1 1 100% !important;
     }
 }
