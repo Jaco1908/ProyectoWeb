@@ -1,501 +1,241 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Concert+One&family=Fugaz+One&family=Gruppo&family=Limelight&family=Squada+One&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-body {
-  margin: 0;
-  font-family: 'Tomorrow', sans-serif;
-  background-color: #fff;
-  color: #000;
+/* Estilos para la sección de catálogos */
+.catalogo-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
-header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.section-header {
     text-align: center;
-    padding: 2px 2%;
-    max-width: 100%;
+    margin-bottom: 40px;
 }
 
-header img {
-    width: 130px;
-}
-
-header h1 {
-    font-family: 'Fugaz One', sans-serif;
+.section-header h2 {
+    font-family: 'Anta', sans-serif;
     color: #0e3b7c;
-    font-size: 3rem;
-    margin: 0;
-}
-
-.login-btn {
-    background-color: #1e4679;
-    color: white;
-    padding: 8px 3px;
-    border-radius: 6px;
-    font-size: 0.7rem;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    font-weight: bold;
-}
-
-.login-btn img {
-    width: 20px;
-    height: 20px;
-}
-
-/* Navegación */
-nav {
-    background-color: #0e3b7c;
-    padding: 3px;
-    text-align: center;
-    max-width: 100%;
-    border-radius: 4px;
-    position: relative;
-    z-index: 100;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-    font-size: 0.82rem;
-    padding: 3px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #1e5da3;
-}
-
-nav a.catalogo {
-    background-color: red;
-}
-
-/* ============================= */
-/* ESTILOS PARA MENÚ DESPLEGABLE MEJORADO */
-/* ============================= */
-
-/* Contenedor principal del menú */
-.nav-container {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
     position: relative;
     display: inline-block;
-    z-index: 100;
 }
 
-/* Menú desplegable oculto por defecto */
-.dropdown-menu {
+.section-header h2::after {
+    content: '';
     position: absolute;
-    top:  calc(100% + 5px);
-    background-color: white;
-    min-width: 800px;
-    max-width: 1000px;
-    border-radius: 0 0 12px 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
-    border: 1px solid #e0e0e0;
-    border-top: none;
-    /* Posicionamiento inteligente */
-    left: 0;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #e41e26;
 }
 
-/* Detectar elementos del lado derecho y posicionarlos hacia la izquierda */
-.nav-container:nth-last-child(-n+3) .dropdown-menu,
-.nav-container:last-child .dropdown-menu,
-.nav-container:nth-last-child(2) .dropdown-menu {
-    left: auto;
-    right: 0;
+.section-header p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
-/* Para elementos específicos que sabemos están al final */
-.nav-container:has(a[href*="ELECTRODOMÉSTICOS"]) .dropdown-menu,
-.nav-container:has(a[href*="MÓVIL"]) .dropdown-menu,
-.nav-container:has(a[href*="COMPUTACIÓN"]) .dropdown-menu,
-.nav-container:has(.catalogo) .dropdown-menu {
-    left: auto;
-    right: 0;
-}
-
-/* Alternativa usando clases específicas si las anteriores no funcionan */
-.dropdown-right .dropdown-menu {
-    left: auto;
-    right: 0;
-}
-
-/* Mostrar menú al hacer hover */
-.nav-container:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-/* Contenido del menú desplegable */
-.dropdown-content {
+/* Grid de catálogos */
+.catalogo-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
 }
 
-/* Columnas del menú */
-.dropdown-column {
+.catalogo-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
 }
 
-/* Títulos de categorías */
-.category-title {
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: #e41e26;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #706e6e;
-    text-transform: uppercase;
-    text-align:left;
+.catalogo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Enlaces dentro del menú */
-.dropdown-link {
-    color: #666;
-    text-decoration: none;
-    font-size: 0.6rem;
-    padding: 2px;
-    transition: color 0.3s ease, padding-left 0.3s ease;
-    border-radius: 2px;
-    text-align: left;
-}
-
-.dropdown-link:hover {
-    color: #0e3b7c;
-    padding-left: 8px;
-    background-color: #f8f9fa;
-}
-
-/* Flecha indicadora para menús que se abren hacia la izquierda */
-.nav-container:nth-last-child(-n+3) .dropdown-menu::before,
-.nav-container:last-child .dropdown-menu::before,
-.nav-container:nth-last-child(2) .dropdown-menu::before,
-.dropdown-right .dropdown-menu::before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    right: 20px;
-    left: auto;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid white;
-}
-
-/* Flecha normal para menús que se abren hacia la derecha */
-.dropdown-menu::before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 20px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid white;
-}
-
-/* Prevenir que el menú se salga de la pantalla */
-@media (max-width: 1200px) {
-    .dropdown-menu {
-        min-width: 700px;
-    }
-    
-    /* Forzar apertura hacia la izquierda en pantallas más pequeñas */
-    .nav-container:nth-child(n+4) .dropdown-menu {
-        left: auto;
-        right: 0;
-    }
-}
-
-/* Responsivo */
-@media (max-width: 1024px) {
-    .dropdown-menu {
-        min-width: 600px;
-    }
-    
-    .dropdown-content {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    /* Todos los menús se abren hacia la izquierda en tablets */
-    .nav-container:nth-child(n+3) .dropdown-menu {
-        left: auto;
-        right: 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .dropdown-menu {
-        min-width: 90vw;
-        left: 50% !important;
-        right: auto !important;
-        transform: translateX(-50%) translateY(-10px);
-    }
-    
-    .nav-container:hover .dropdown-menu {
-        transform: translateX(-50%) translateY(0);
-    }
-    
-    .dropdown-content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        padding: 20px;
-    }
-    
-    /* Centrar la flecha en móviles */
-    .dropdown-menu::before {
-        left: 50% !important;
-        right: auto !important;
-        transform: translateX(-50%);
-    }
-}
-
-@media (max-width: 480px) {
-    .dropdown-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .dropdown-menu {
-        min-width: 95vw;
-    }
-}
-
-/* Título principal */
-main h2 {
-    font-family: 'Anta', sans-serif;
-    text-align: center;
-    color: #0e3b7c;
-}
-/* Fondo superior con imagen y título centrado */
-.hero {
-  background-image: url('fondo.jpg'); /* Usa aquí tu imagen de fondo */
-  background-size: cover;
-  background-position: center;
-  padding: 80px 20px;
-  text-align: center;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-/* Contenedor de catálogos */
-.contenedor-catalogos {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-/* Cada bloque de catálogo */
-.catalogo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  gap: 20px;
-}
-
-.catalogo img {
-  width: 80px;
-  height: 80px;
-}
-
-/* Estilos de texto */
-.catalogo h2 {
-  margin: 0 0 5px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.catalogo a {
-  color: red;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.catalogo a:hover {
-  text-decoration: underline;
-}
-footer {
-    background-color: #16345b;
-    color: white;
-    padding: 20px;
-    font-family: 'Tomorrow', sans-serif;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 8px;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.footer-section {
-    margin: 0;
-    line-height: 1.4;
-    max-width: 300px;
-}
-
-.footer-logo {
-    width: 100px;
-    flex-shrink: 0;
-}
-
-.footer-description {
-    font-family: 'Tomorrow', sans-serif;
-    font-size: 0.75rem;
-    line-height: 1;
-    color: rgba(255, 255, 255, 0.85);
-    margin: 0;
-    max-width: 180px;
-    padding-left: 15px;
-    border-left: 2px solid rgba(255, 255, 255, 0.2);
-    margin-left: 15px;
-}
-
-.footer-title {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    color: white;
+.catalogo-thumbnail {
     position: relative;
-    padding-bottom: 8px;
+    height: 200px;
+    overflow: hidden;
 }
 
-.footer-title::after {
-    content: '';
+.catalogo-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.catalogo-card:hover .catalogo-preview {
+    transform: scale(1.05);
+}
+
+.pdf-icon {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 40px;
-    height: 2px;
-    background-color: #e41e26;
-}
-
-.location-info {
-    margin-bottom: 15px;
-}
-
-.location-name {
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-size: 0.95rem;
-}
-
-.location-address,
-.location-phone {
-    font-size: 0.85rem;
-    margin: 5px 0;
-    line-height: 1.4;
-}
-
-.map-iframe {
-    border: none;
-    border-radius: 6px;
-    margin-bottom: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.map-links {
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 0.8rem;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.map-link {
-    color: #a0c4ff;
-    text-decoration: none;
-    transition: color 0.3s;
+.pdf-icon img {
+    width: 30px;
+    height: 30px;
 }
 
-.map-link:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-.map-divider {
-    color: #a0c4ff;
-    font-size: 0.7rem;
-}
-
-.social-icons {
+.catalogo-info {
+    padding: 20px;
+    flex-grow: 1;
     display: flex;
-    gap: 10px;
-    margin-bottom: 25px;
+    flex-direction: column;
 }
 
-.social-link img {
-    width: 28px;
-    height: 28px;
-    transition: transform 0.3s;
+.catalogo-info h3 {
+    color: #0e3b7c;
+    margin: 0 0 10px;
+    font-size: 1.3rem;
 }
 
-.social-link:hover img {
-    transform: scale(1.1);
+.catalogo-info p {
+    color: #666;
+    margin: 0 0 15px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex-grow: 1;
 }
 
-.footer-copyright {
-    font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.7);
-    margin-top: 20px;
-    box-align: center;
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 15px;
+.catalogo-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.file-size {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #e41e26;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #c41820;
+}
+
+/* Sección de video */
+.video-presentacion {
+    display: flex;
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.video-container {
+    flex: 1;
+    min-width: 50%;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    display: block;
+}
+
+.video-info {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-info h3 {
+    color: #0e3b7c;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.video-info p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.ver-mas-btn {
+    align-self: flex-start;
+    background: #0e3b7c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.ver-mas-btn:hover {
+    background: #1e5da3;
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .catalogo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
-    .footer-container {
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .video-presentacion {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
     }
-
-    .footer-section {
-        text-align: center;
-    }
-
-    .footer-title::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .social-icons {
-        justify-content: center;
-    }
-
-    .footer-description {
-        margin: 0 auto 20px;
-    }
-
-    .map-links {
-        justify-content: center;
+    
+    .video-container {
+        min-height: 250px;
     }
 }
 
 @media (max-width: 480px) {
-    .footer-section {
-        min-width: 100%;
+    .catalogo-grid {
+        grid-template-columns: 1fr;
     }
-
-    .map-iframe {
-        width: 100%;
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-header p {
+        font-size: 1rem;
     }
 }
