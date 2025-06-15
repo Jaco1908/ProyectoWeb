@@ -32,7 +32,7 @@ body {
 .container {
     max-width: 1400px;
     margin: 40px auto;
-    padding: 0 30px;
+    padding: 0px;
 }
 
 /* Breadcrumb */
@@ -40,7 +40,7 @@ body {
     margin-bottom: 30px;
     font-size: 15px;
     color: var(--light-text);
-    padding: 15px 0;
+    padding: 0px ;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
