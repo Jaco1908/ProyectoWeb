@@ -14,6 +14,9 @@ session_start();
         rel="stylesheet">
     <link rel="shortcut icon" href="Image/Logo.png">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/Plantilla/Footer.css">
+    <link rel="stylesheet" href="CSS/Plantilla/Header.css">
+    <link rel="stylesheet" href="CSS/Plantilla/Nav.css">
 </head>
 
 <body>
@@ -64,7 +67,7 @@ session_start();
         </div>
 
         <div class="nav-container">
-            <a href="#" class="has-dropdown">ALMACENAMIENTO</a>
+            <a href="Productos/Alamacenamiento/Almacenamiento.html" class="has-dropdown">ACCESORIOS</a>
             <div class="dropdown-menu">
                 <div class="dropdown-content">
                     <div class="dropdown-column">
