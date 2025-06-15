@@ -11,6 +11,9 @@ session_start();
     <link rel="stylesheet" href="../CSS/style_servicio.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/Plantilla/Footer.css">
+    <link rel="stylesheet" href="../CSS/Plantilla/Header.css">
+    <link rel="stylesheet" href="../CSS/Plantilla/Nav.css">
 </head>
 
 <body>
