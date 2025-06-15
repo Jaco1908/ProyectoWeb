@@ -180,106 +180,122 @@
         </nav>
     </div>
 
-    <main class="catalogo-section">
-        <div class="section-header">
-            <h2>Nuestros Catálogos</h2>
-            <p>Descarga nuestros últimos catálogos de productos en formato PDF</p>
-        </div>
+
+    <main class="catalogo-container">
+        <h1 class="main-title">Nuestros Catálogos</h1>
+        <p class="main-subtitle">Descarga los últimos catálogos de productos por categoría</p>
 
         <div class="catalogo-grid">
+            <!-- Accesorios -->
             <div class="catalogo-card">
-                <div class="catalogo-thumbnail">
-                    <img src="../Image/Catalogo/catalogo-preview1.jpg" alt="Vista previa Catálogo 1"
-                        class="catalogo-preview">
-                    <div class="pdf-icon">
-                        <img src="../Image/Catalogo/icono-pdf.png" alt="PDF Icono">
-                    </div>
+                <div class="card-icon">
+                    <img src="../Image/Catalogo/accesorios-icon.svg" alt="Accesorios">
                 </div>
-                <div class="catalogo-info">
-                    <h3>Catálogo Electrónica 2023</h3>
-                    <p>Todos nuestros productos electrónicos en un solo lugar</p>
-                    <div class="catalogo-meta">
-                        <span class="file-size">PDF • 8.4 MB</span>
-                        <a href="archivos/catalogo1.pdf" download class="download-btn">
-                            <span>Descargar</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                <path
-                                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                            </svg>
-                        </a>
-                    </div>
+                <h2 class="card-title">Accesorios</h2>
+                <p class="card-description">Auriculares, fundas y más para tus dispositivos</p>
+                <div class="card-footer">
+                    <span class="file-info">PDF - 2.4MB</span>
+                    <a href="../archivos/catalogo-accesorios.pdf" download class="download-btn">Descargar</a>
                 </div>
             </div>
 
+            <!-- Almacenamiento -->
             <div class="catalogo-card">
-                <div class="catalogo-thumbnail">
-                    <img src="../Image/Catalogo/catalogo-preview2.jpg" alt="Vista previa Catálogo 2"
-                        class="catalogo-preview">
-                    <div class="pdf-icon">
-                        <img src="../Image/Catalogo/icono-pdf.png" alt="PDF Icono">
-                    </div>
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                        viewBox="0 0 24 24">
+                        <path d="M4,8v11c0,0.6,0.4,1,1,1h14c0.6,0,1-0.4,1-1V8H4z" opacity=".3"></path>
+                        <path
+                            d="M19,21H5c-1.1,0-2-0.9-2-2V7c0-0.2,0-0.4,0.1-0.5l1.8-3C5.1,3.2,5.4,3,5.8,3h12.5c0.4,0,0.7,0.2,0.9,0.5l1.8,3 C21,6.6,21,6.8,21,7v12C21,20.1,20.1,21,19,21z M5,7.3V19h14V7.3L17.7,5H6.3L5,7.3z">
+                        </path>
+                        <path d="M4 7H20V9H4zM9 11H15V13H9z"></path>
+                    </svg>
                 </div>
-                <div class="catalogo-info">
-                    <h3>Catálogo Accesorios Q4</h3>
-                    <p>Novedades en accesorios para dispositivos móviles</p>
-                    <div class="catalogo-meta">
-                        <span class="file-size">PDF • 5.2 MB</span>
-                        <a href="archivos/catalogo2.pdf" download class="download-btn">
-                            <span>Descargar</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                <path
-                                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                            </svg>
-                        </a>
-                    </div>
+                <h2 class="card-title">Almacenamiento</h2>
+                <p class="card-description">Discos duros, SSD y memorias USB</p>
+                <div class="card-footer">
+                    <span class="file-info">PDF - 3.1MB</span>
+                    <a href="../archivos/catalogo-almacenamiento.pdf" download class="download-btn">Descargar</a>
                 </div>
             </div>
 
+            <!-- Conectividad -->
             <div class="catalogo-card">
-                <div class="catalogo-thumbnail">
-                    <img src="../Image/Catalogo/catalogo-preview3.jpg" alt="Vista previa Catálogo 3"
-                        class="catalogo-preview">
-                    <div class="pdf-icon">
-                        <img src="../Image/Catalogo/icono-pdf.png" alt="PDF Icono">
-                    </div>
+                <div class="card-icon">
+                    <img src="../Image/Catalogo/conectividad-icon.svg" alt="Conectividad">
                 </div>
-                <div class="catalogo-info">
-                    <h3>Ofertas Especiales</h3>
-                    <p>Productos con descuentos exclusivos para mayoristas</p>
-                    <div class="catalogo-meta">
-                        <span class="file-size">PDF • 6.7 MB</span>
-                        <a href="archivos/catalogo3.pdf" download class="download-btn">
-                            <span>Descargar</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                <path
-                                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                            </svg>
-                        </a>
-                    </div>
+                <h2 class="card-title">Conectividad</h2>
+                <p class="card-description">Cables, adaptadores y accesorios de red</p>
+                <div class="card-footer">
+                    <span class="file-info">PDF - 2.8MB</span>
+                    <a href="../archivos/catalogo-conectividad.pdf" download class="download-btn">Descargar</a>
                 </div>
             </div>
-        </div>
 
-        <div class="video-presentacion">
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <!-- Consola -->
+            <div class="catalogo-card">
+                <div class="card-icon">
+                    <img src="../Image/Catalogo/consola-icon.svg" alt="Consola">
+                </div>
+                <h2 class="card-title">Consola</h2>
+                <p class="card-description">Accesorios para videojuegos</p>
+                <div class="card-footer">
+                    <span class="file-info">PDF - 3.5MB</span>
+                    <a href="../archivos/catalogo-consola.pdf" download class="download-btn">Descargar</a>
+                </div>
             </div>
-            <div class="video-info">
-                <h3>Nuestra Colección 2023</h3>
-                <p>Mira nuestro video destacado con los productos más populares de este año. Descubre las novedades y
-                    tendencias en tecnología mayorista.</p>
-                <a href="#" class="ver-mas-btn">Ver más videos</a>
+
+            <!-- Computación -->
+            <div class="catalogo-card">
+                <div class="card-icon">
+                    <img src="../Image/Catalogo/computacion-icon.svg" alt="Computación">
+                </div>
+                <h2 class="card-title">Computación</h2>
+                <p class="card-description">Componentes y periféricos</p>
+                <div class="card-footer">
+                    <span class="file-info">PDF - 4.2MB</span>
+                    <a href="../archivos/catalogo-computacion.pdf" download class="download-btn">Descargar</a>
+                </div>
+            </div>
+
+            <!-- Electrodomésticos -->
+            <div class="catalogo-card">
+                <div class="card-icon">
+                    <img src="../Image/Catalogo/electrodomesticos-icon.svg" alt="Electrodomésticos">
+                </div>
+                <h2 class="card-title">Electrodomésticos</h2>
+                <p class="card-description">Tecnología para el hogar</p>
+                <div class="card-footer">
+                    <span class="file-info">PDF - 2.9MB</span>
+                    <a href="../archivos/catalogo-electrodomesticos.pdf" download class="download-btn">Descargar</a>
+                </div>
+            </div>
+
+            <!-- Móvil -->
+            <div class="catalogo-card">
+                <div class="card-icon">
+                    <img src="../Image/Catalogo/movil-icon.svg" alt="Móvil">
+                </div>
+                <h2 class="card-title">Móvil</h2>
+                <p class="card-description">Dispositivos y accesorios móviles</p>
+                <div class="card-footer">
+                    <span class="file-info">PDF - 3.7MB</span>
+                    <a href="../archivos/catalogo-movil.pdf" download class="download-btn">Descargar</a>
+                </div>
+            </div>
+
+            <!-- Ofertas Especiales -->
+            <div class="catalogo-card destacado">
+                <div class="card-badge">Nuevo</div>
+                <div class="card-icon">
+                    <img src="../Image/Catalogo/ofertas-icon.svg" alt="Ofertas">
+                </div>
+                <h2 class="card-title">Ofertas Especiales</h2>
+                <p class="card-description">Descuentos exclusivos por tiempo limitado</p>
+                <div class="card-footer">
+                    <span class="file-info">PDF - 4.5MB</span>
+                    <a href="../archivos/catalogo-ofertas.pdf" download class="download-btn">Descargar</a>
+                </div>
             </div>
         </div>
     </main>

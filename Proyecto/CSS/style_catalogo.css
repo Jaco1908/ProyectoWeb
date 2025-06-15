@@ -1,228 +1,150 @@
-/* Estilos para la sección de catálogos */
-.catalogo-section {
+/* Estilos base */
+.catalogo-container {
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
 }
 
-.section-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-header h2 {
-    font-family: 'Anta', sans-serif;
+.main-title {
+    font-family: 'Fugaz One', sans-serif;
     color: #0e3b7c;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    position: relative;
-    display: inline-block;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
-.section-header h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: #e41e26;
-}
-
-.section-header p {
+.main-subtitle {
     color: #666;
+    text-align: center;
     font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
+    margin-bottom: 3rem;
+    font-weight: 500;
 }
 
 /* Grid de catálogos */
 .catalogo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
-    margin-bottom: 60px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
+/* Tarjetas */
 .catalogo-card {
     background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    border: 1px solid #eaeaea;
 }
 
 .catalogo-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-.catalogo-thumbnail {
-    position: relative;
-    height: 200px;
-    overflow: hidden;
-}
-
-.catalogo-preview {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.catalogo-card:hover .catalogo-preview {
-    transform: scale(1.05);
-}
-
-.pdf-icon {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: rgba(255, 255, 255, 0.9);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.card-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background: #f8f9fa;
+    border-radius: 50%;
+    padding: 12px;
 }
 
-.pdf-icon img {
-    width: 30px;
-    height: 30px;
+.card-icon img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
 }
 
-.catalogo-info {
-    padding: 20px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.catalogo-info h3 {
+.card-title {
+    font-family: 'Tomorrow', sans-serif;
     color: #0e3b7c;
-    margin: 0 0 10px;
     font-size: 1.3rem;
+    text-align: center;
+    margin: 0 0 0.75rem;
+    font-weight: 700;
 }
 
-.catalogo-info p {
+.card-description {
     color: #666;
-    margin: 0 0 15px;
+    text-align: center;
     font-size: 0.95rem;
     line-height: 1.5;
-    flex-grow: 1;
+    margin-bottom: 1.5rem;
+    min-height: 3.5rem;
 }
 
-.catalogo-meta {
+.card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 
-.file-size {
-    color: #888;
+.file-info {
     font-size: 0.85rem;
+    color: #888;
 }
 
 .download-btn {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    background: #e41e26;
+    gap: 0.5rem;
+    background: #0e3b7c;
     color: white;
-    padding: 8px 15px;
-    border-radius: 5px;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
     text-decoration: none;
-    font-weight: bold;
     font-size: 0.9rem;
-    transition: background 0.3s ease;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .download-btn:hover {
-    background: #c41820;
-}
-
-/* Sección de video */
-.video-presentacion {
-    display: flex;
-    background: #f8f9fa;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-top: 50px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-.video-container {
-    flex: 1;
-    min-width: 50%;
-}
-
-.video-container iframe {
-    width: 100%;
-    height: 100%;
-    min-height: 350px;
-    display: block;
-}
-
-.video-info {
-    flex: 1;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.video-info h3 {
-    color: #0e3b7c;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-.video-info p {
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.ver-mas-btn {
-    align-self: flex-start;
-    background: #0e3b7c;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.ver-mas-btn:hover {
     background: #1e5da3;
+    transform: translateY(-2px);
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .catalogo-grid {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
+/* Tarjeta destacada */
+.destacado {
+    border: 1px solid #e41e26;
 }
 
+.destacado .download-btn {
+    background: #e41e26;
+}
+
+.destacado .download-btn:hover {
+    background: #c62828;
+}
+
+.card-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: #e41e26;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(230, 30, 38, 0.3);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .section-header h2 {
-        font-size: 2rem;
+    .catalogo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     }
     
-    .video-presentacion {
-        flex-direction: column;
-    }
-    
-    .video-container {
-        min-height: 250px;
+    .main-title {
+        font-size: 1.8rem;
     }
 }
 
@@ -231,11 +153,7 @@
         grid-template-columns: 1fr;
     }
     
-    .section-header h2 {
-        font-size: 1.8rem;
-    }
-    
-    .section-header p {
-        font-size: 1rem;
+    .catalogo-card {
+        padding: 1.5rem;
     }
 }
