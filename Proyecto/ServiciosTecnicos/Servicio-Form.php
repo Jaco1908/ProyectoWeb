@@ -26,16 +26,16 @@ session_start();
         <div style="display: flex; align-items: center; gap: 10px;">
             <?php if (isset($_SESSION['nombre'])): ?>
                 <span style="margin-right: 10px;">👤 <?php echo htmlspecialchars($_SESSION['nombre']); ?></span>
-                <a href="IniciarSesion/logout.php" class="login-btn">
+                <a href="../IniciarSesion/logout.php" class="login-btn">
                     <span style="margin-right: 10px;"><i>Cerrar Sesión</i></span>
                 </a>
             <?php else: ?>
-                <a href="IniciarSesion/sesion.php" class="login-btn" style="display: flex; align-items: center;">
-                    <img src="Image/user.png" alt="Usuario" style="height: 20px; margin-right: 5px;">
+                <a href="../IniciarSesion/sesion.php" class="login-btn" style="display: flex; align-items: center;">
+                    <img src="../Image/user.png" alt="Usuario" style="height: 20px; margin-right: 5px;">
                     <span><i>Iniciar Sesión</i></span>
                 </a>
-                <a href="IniciarSesion/registros.php" class="login-btn" style="display: flex; align-items: center;">
-                    <img src="Image/user.png" alt="Usuario" style="height: 20px; margin-right: 5px;">
+                <a href="../IniciarSesion/registros.php" class="login-btn" style="display: flex; align-items: center;">
+                    <img src="../Image/user.png" alt="Usuario" style="height: 20px; margin-right: 5px;">
                     <span><i>Regístrate</i></span>
                 </a>
             <?php endif; ?>
