@@ -1,0 +1,258 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Concert+One&family=Fugaz+One&family=Gruppo&family=Limelight&family=Squada+One&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Tomorrow', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+}
+
+.breadcrumb a {
+    color: #0066c0;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #555;
+}
+
+/* Layout */
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* Filtros */
+.filter-section {
+    margin-bottom: 25px;
+}
+
+.filter-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.filter-section ul {
+    list-style: none;
+}
+
+.filter-section li {
+    margin-bottom: 8px;
+}
+
+.filter-section a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 0;
+    transition: all 0.2s;
+}
+
+.filter-section a:hover, 
+.filter-section a.active {
+    color: #0066c0;
+    font-weight: 500;
+}
+
+/* Opciones de ordenamiento */
+.sorting-options {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.sort-by {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-by label {
+    font-size: 14px;
+    color: #555;
+}
+
+.sort-select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 30px;
+}
+
+.sort-select:hover {
+    border-color: #999;
+}
+
+.sort-select:focus {
+    outline: none;
+    border-color: #0066c0;
+    box-shadow: 0 0 0 2px rgba(0, 102, 192, 0.2);
+}
+
+/* Cuadrícula de productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-info {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.price-info {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.view-btn {
+    background-color: #0066c0;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+.view-btn:hover {
+    background-color: #0055a0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Estilos para las imágenes de producto */
+.product-image {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
