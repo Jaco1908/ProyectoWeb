@@ -5,6 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+.sticky-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
 
 header {
     background-color: white;
@@ -15,8 +22,6 @@ header {
     padding: 5px 5%;
     max-width: 100%;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
     z-index: 1000;
 }
 
