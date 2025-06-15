@@ -86,7 +86,7 @@ echo "<!DOCTYPE html>
         echo "<p><strong>💬 Comentarios adicionales:</strong> (No se ingresaron comentarios)</p>";
     }
 
-    echo "<a href='../Paginas/servicios.html'>⬅ Volver a Servicios</a>
+    echo "<a href='/servicios.html'>⬅ Volver a Servicios</a>
     </div>
 
     <!-- PIE DE PÁGINA -->
