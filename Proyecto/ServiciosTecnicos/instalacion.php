@@ -134,7 +134,7 @@ echo "<!DOCTYPE html>
     </body>
     </html>";
 } else {
-    // Redirigir si se accede sin enviar datos
+    
     header("Location: ../Paginas/servicios.html");
     exit();
 }
