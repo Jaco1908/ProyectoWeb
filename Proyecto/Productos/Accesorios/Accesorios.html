@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACCESORIOS</title><link
+    <title>ACCESORIOS</title>
+    <link
         href="https://fonts.googleapis.com/css2?family=Anta&family=Concert+One&family=Fugaz+One&family=Gruppo&family=Limelight&family=Squada+One&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="Accesorios.css">
@@ -12,7 +13,7 @@
     <link rel="stylesheet" href="../../CSS/Plantilla/Header.css">
     <link rel="stylesheet" href="../../CSS/Plantilla/Nav.css">
     <link rel="shortcut icon" href="../../Image/Logo.png">
-    
+
 </head>
 
 <body>
@@ -180,23 +181,32 @@
     </nav>
     <div class="container">
         <div class="breadcrumb">
-            <a href="../../index.html">Home</a> > <span>ACCESORIOS</span>
+            <a href="../../index.html">Home</a> <span>ACCESORIOS</span>
         </div>
 
         <div class="content-wrapper">
             <div class="sidebar">
-                <div class="filter-section">
-                    <h3>Categorías</h3>
-                    <ul>
-                        <li><a href="#" class="active">Todas</a></li>
-                    </ul>
-                </div>
-
-                <div class="filter-section">
-                    <h3>Marcas</h3>
-                    <ul>
-                        <li><a href="#">Todas las marcas</a></li>
-                    </ul>
+                    <div class="filter-section brands-section">
+                    <h3>
+                        Marcas
+                        <a href="#" class="view-all-brands">Ver todas</a>
+                    </h3>
+                    <div class="brands-scrollable">
+                        <ul>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Xiaomi</a></li>
+                            <li><a href="#">Huawei</a></li>
+                            <li><a href="#">Sony</a></li>
+                            <li><a href="#">LG</a></li>
+                            <li><a href="#">Motorola</a></li>
+                            <li><a href="#">Nokia</a></li>
+                            <li><a href="#">OnePlus</a></li>
+                            <li><a href="#">Google</a></li>
+                            <li><a href="#">Asus</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -212,73 +222,241 @@
                             <option value="price-high">Ordenar por precio: alto a bajo</option>
                         </select>
                     </div>
+
+                    <!-- Botón de alternancia de vista -->
+                    <div class="view-toggle">
+                        <input type="radio" name="view" id="grid-view" checked>
+                        <label for="grid-view" title="Vista en cuadrícula">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="3" y="3" width="7" height="7" />
+                                <rect x="14" y="3" width="7" height="7" />
+                                <rect x="3" y="14" width="7" height="7" />
+                                <rect x="14" y="14" width="7" height="7" />
+                            </svg>
+                        </label>
+
+                        <input type="radio" name="view" id="list-view">
+                        <label for="list-view" title="Vista en lista">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="3" y="5" width="18" height="2" />
+                                <rect x="3" y="11" width="18" height="2" />
+                                <rect x="3" y="17" width="18" height="2" />
+                            </svg>
+                        </label>
+                    </div>
                 </div>
 
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/200" alt="Producto">
+                <!-- Contenedor del slider con productos -->
+                <div class="products-slider">
+                    <!-- Slide 1 -->
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+
+                    <div class="slides">
+                        <!-- Página 1 de productos -->
+                        <div class="slide">
+                            <div class="product-grid">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>ACCESORIO ZEBRA ADAPTADOR DE C.A.L198 (CARGADOR MÓVIL)</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>ADAPTADOR DE RED TPURK USB ARCHER TU PLUS AC 1300</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>ADAPTADOR SPEEDINRO SM1890 HDMI A VGA / SOPORTA 1080P</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>AUDIO XIAOMI REDMI BUDS 6 PLAY AZUL</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>AUDIO XIAOMI REDMI BUDS 6 PLAY NEGRO</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>CARGADOR UNIVERSAL USB-C 65W</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="product-info">
-                            <h3>ACCESORIO ZEBRA ADAPTADOR DE C.A.L198 (CARGADOR MÓVIL)</h3>
-                            <p class="price-info">Inicia sesión para ver precios</p>
-                            <button class="view-btn">Ver producto</button>
+
+                        <!-- Página 2 de productos -->
+                        <div class="slide">
+                            <div class="product-grid">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>MOUSE INALÁMBRICO LOGITECH MX MASTER 3</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>TECLADO MECÁNICO RGB CORSAIR K70</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>WEBCAM HD 1080P CON MICRÓFONO</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>HUB USB 3.0 DE 7 PUERTOS</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>SOPORTE PARA MONITOR AJUSTABLE</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>CABLE HDMI 4K ULTRA HD 2M</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Página 3 de productos -->
+                        <div class="slide">
+                            <div class="product-grid">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>ALTAVOZ BLUETOOTH PORTÁTIL JBL</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>POWER BANK 20000mAh CARGA RÁPIDA</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>MICRÓFONO USB CONDENSADOR PROFESIONAL</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/200" alt="Producto">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>ADAPTADOR USB-C A HDMI 4K</h3>
+                                        <p class="price-info">Inicia sesión para ver precios</p>
+                                        <button class="view-btn">Ver producto</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/200" alt="Producto">
+                    <!-- Controles de navegación -->
+                    <div class="slider-controls">
+                        <div class="slider-nav">
+                            <label for="slide1" class="nav-dot"></label>
+                            <label for="slide2" class="nav-dot"></label>
+                            <label for="slide3" class="nav-dot"></label>
                         </div>
-                        <div class="product-info">
-                            <h3>ADAPTADOR DE RED TPURK USB ARCHER TU PLUS AC 1300 ANAHMO JANTENA OMNIMECCOOLA</h3>
-                            <p class="price-info">Inicia sesión para ver precios</p>
-                            <button class="view-btn">Ver producto</button>
-                        </div>
-                    </div>
 
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/200" alt="Producto">
-                        </div>
-                        <div class="product-info">
-                            <h3>ADAPTADOR SPEEDINRO SM1890 HDMI A VGA / SOPORTA 1080P / PLUG & PLAY / CABE ALGUNO 3.5
-                            </h3>
-                            <p class="price-info">Inicia sesión para ver precios</p>
-                            <button class="view-btn">Ver producto</button>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/200" alt="Producto">
-                        </div>
-                        <div class="product-info">
-                            <h3>AUDIO XIAOMIREDMI BUDS 6 PLAY ANUL RUIDO 26 H. / BT 5.4 JPX4./COLOR AZUL</h3>
-                            <p class="price-info">Inicia sesión para ver precios</p>
-                            <button class="view-btn">Ver producto</button>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/200" alt="Producto">
-                        </div>
-                        <div class="product-info">
-                            <h3>AUDIO XIAOMIREDMI BUDS 6 PLAY ANUL RUIDO 26 H. / BT 5.4 JPX4./COLOR REGRO</h3>
-                            <p class="price-info">Inicia sesión para ver precios</p>
-                            <button class="view-btn">Ver producto</button>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/200" alt="Producto">
-                        </div>
-                        <div class="product-info">
-                            <h3>AUDIO XIAOMIREDMI BUDS 6 PLAY ANUL RUIDO 26 H. / BT 5.4 JPX4./COLOR REGRO</h3>
-                            <p class="price-info">Inicia sesión para ver precios</p>
-                            <button class="view-btn">Ver producto</button>
+                        <div class="slider-arrows">
+                            <label for="slide1" class="arrow prev" data-slide="3">❮</label>
+                            <label for="slide2" class="arrow next" data-slide="1">❯</label>
                         </div>
                     </div>
                 </div>
