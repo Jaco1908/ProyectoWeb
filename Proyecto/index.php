@@ -87,7 +87,7 @@ session_start();
         </div>
 
         <div class="nav-container">
-            <a href="Productos/Conectividad/Cpnectividad.html" class="has-dropdown">CONECTIVIDAD</a>
+            <a href="Productos/Conectividad/Conectividad.html" class="has-dropdown">CONECTIVIDAD</a>
             <div class="dropdown-menu">
                 <div class="dropdown-content">
                     <div class="dropdown-column">
