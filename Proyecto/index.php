@@ -23,7 +23,7 @@ session_start();
 <div class="sticky-wrapper">  
     <header>
         <img src="Image/Logo.png" alt="Logo de InnovaSys">
-        <h1>INNOVASYS</h1>
+        <h1>&nbsp;INNOVASYS&nbsp;</h1>
         <div style="display: flex; align-items: center; gap: 10px;">
             <?php if (isset($_SESSION['nombre'])): ?>
                 <span style="margin-right: 10px;">👤 <?php echo htmlspecialchars($_SESSION['nombre']); ?></span>
@@ -87,7 +87,7 @@ session_start();
         </div>
 
         <div class="nav-container">
-            <a href="#" class="has-dropdown">CONECTIVIDAD</a>
+            <a href="Productos/Conectividad/Conectividad.html" class="has-dropdown">CONECTIVIDAD</a>
             <div class="dropdown-menu">
                 <div class="dropdown-content">
                     <div class="dropdown-column">
@@ -112,7 +112,7 @@ session_start();
         </div>
 
         <div class="nav-container">
-            <a href="#" class="has-dropdown">CONSOLA</a>
+            <a href="Productos/Consola/Consola.html" class="has-dropdown">CONSOLA</a>
             <div class="dropdown-menu">
                 <div class="dropdown-content">
                     <div class="dropdown-column">
