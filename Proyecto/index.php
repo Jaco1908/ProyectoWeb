@@ -44,7 +44,7 @@ session_start();
     </header>
     <nav>
         <div class="nav-container">
-            <a href="Productos/Accesorios/Accesorios.html" class="has-dropdown">ACCESORIOS</a>
+            <a href="Productos/Accesorios/Accesorios.php" class="has-dropdown">ACCESORIOS</a>
             <div class="dropdown-menu">
                 <div class="dropdown-content">
                     <div class="dropdown-column">
