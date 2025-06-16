@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="../CSS/Plantilla/Nav.css">
 </head>
 <body>
-    <!-- CABECERA -->
+    <!-- CABECERA  INICIO-->
     <header>
         <a href="../index.php"><img src="../Image/Logo.png" alt="Logo de InnovaSys"></a>
         <h1>INNOVASYS</h1>
@@ -94,6 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <a href="#" class="social-link"><img src="../Image/Redes/whatsapp.png" alt="WhatsApp"></a>
                     <a href="#" class="social-link"><img src="../Image/Redes/linkedin.png" alt="LinkedIn"></a>
                 </div>
+
             </div>
         </div>
         <div class="footer-copyright">
