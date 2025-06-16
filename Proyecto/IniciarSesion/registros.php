@@ -1,45 +1,5 @@
 <?php
 session_start();
-
-if (isset($_SESSION['nombre'])) {
-    header("Location: ../index.php");
-    exit;
-}
-
-$mensaje = "";
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $u = trim($_POST["nombre"] ?? "");
-    $email = trim($_POST["email"] ?? "");
-    $p1 = trim($_POST["password"] ?? "");
-    $p2 = trim($_POST["confirm_password"] ?? "");
-
-    if (!$u || !$email || !$p1 || !$p2) {
-        $mensaje = "Completa todos los campos.";
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $mensaje = "Email inválido.";
-    } elseif ($p1 !== $p2) {
-        $mensaje = "Las contraseñas no coinciden.";
-    } else {
-        $file = __DIR__ . "/cuentas.txt";
-        $exists = false;
-        if (file_exists($file)) {
-            foreach (file($file, FILE_IGNORE_NEW_LINES) as $line) {
-                list($ux, $ex,) = explode("|", $line);
-                if ($ux === $u || $ex === $email) {
-                    $exists = true;
-                    break;
-                }
-            }
-        }
-        if ($exists) {
-            $mensaje = "Usuario o correo ya existe.";
-        } else {
-            file_put_contents($file, "$u|$email|$p1\n", FILE_APPEND | LOCK_EX);
-            header("Location: login.php");
-            exit;
-        }
-    }
-}
 ?>
 <!DOCTYPE html>
 <html lang="es">

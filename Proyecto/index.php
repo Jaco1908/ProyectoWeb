@@ -23,7 +23,7 @@ session_start();
 <div class="sticky-wrapper">  
     <header>
         <img src="Image/Logo.png" alt="Logo de InnovaSys">
-        <h1>INNOVASYS</h1>
+        <h1>&nbsp;INNOVASYS&nbsp;</h1>
         <div style="display: flex; align-items: center; gap: 10px;">
             <?php if (isset($_SESSION['nombre'])): ?>
                 <span style="margin-right: 10px;">👤 <?php echo htmlspecialchars($_SESSION['nombre']); ?></span>
