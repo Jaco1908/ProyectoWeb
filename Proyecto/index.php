@@ -70,7 +70,7 @@ session_start();
         </div>
 
         <div class="nav-container">
-            <a href="Productos/Accesorios/Accesorios.html" class="has-dropdown">ACCESORIOS</a>
+            <a href="Productos/Accesorios/Accesorios.html" class="has-dropdown">ALMACENAMIENTO</a>
             <div class="dropdown-menu">
                 <div class="dropdown-content">
                     <div class="dropdown-column">
@@ -87,7 +87,7 @@ session_start();
         </div>
 
         <div class="nav-container">
-            <a href="Productos/Conectividad/Conectividad.html" class="has-dropdown">CONECTIVIDAD</a>
+            <a href="Productos/Conectividad/Cpnectividad.html" class="has-dropdown">CONECTIVIDAD</a>
             <div class="dropdown-menu">
                 <div class="dropdown-content">
                     <div class="dropdown-column">
@@ -112,7 +112,7 @@ session_start();
         </div>
 
         <div class="nav-container">
-            <a href="Productos/Consola/Consola.html" class="has-dropdown">CONSOLA</a>
+            <a href="Productos/Accesorios/Accesorios.html" class="has-dropdown">CONSOLA</a>
             <div class="dropdown-menu">
                 <div class="dropdown-content">
                     <div class="dropdown-column">
@@ -197,7 +197,7 @@ session_start();
 
         <a href="Catalogo/catalogo.html" class="catalogo">CATÁLOGO</a>
     </nav>
-</div> <!-- Cierre de sticky-wrapper -->
+</div> <!-- Cierre de sticky-wrapper jj -->
 <br>
     <main>
         <!-- Carrusel de Promociones Mejorado -->
