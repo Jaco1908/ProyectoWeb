@@ -44,7 +44,7 @@ session_start();
     </header>
     <nav>
         <div class="nav-container">
-            <a href="#" class="has-dropdown">ACCESORIOS</a>
+            <a href="Productos/Accesorios/Accesorios.html" class="has-dropdown">ACCESORIOS</a>
             <div class="dropdown-menu">
                 <div class="dropdown-content">
                     <div class="dropdown-column">
@@ -198,7 +198,7 @@ session_start();
         <a href="Catalogo/catalogo.html" class="catalogo">CATÁLOGO</a>
     </nav>
 </div> <!-- Cierre de sticky-wrapper -->
-
+<br>
     <main>
         <!-- Carrusel de Promociones Mejorado -->
         <div class="promo-carousel-container">
@@ -252,7 +252,7 @@ session_start();
             </div>
         </div>
 
-        <!--=============================
+<!--=============================
 Seccion de productos
 /* ============================= */-->
         <section class="seccion-productos">
