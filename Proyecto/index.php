@@ -200,8 +200,10 @@ session_start();
 </div> <!-- Cierre de sticky-wrapper -->
 <br>
     <main>
-        <!-- Carrusel de Promociones Mejorado -->
-        <div class="promo-carousel-container">
+<!--=============================
+Carrusel de promociones
+/* ============================= */-->
+<div class="promo-carousel-container">
             <div class="promo-carousel">
                 <!-- Inputs radio -->
                 <input type="radio" name="promo-slide" id="promo-slide1" checked>
