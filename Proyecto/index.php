@@ -87,7 +87,7 @@ session_start();
         </div>
 
         <div class="nav-container">
-            <a href="#" class="has-dropdown">CONECTIVIDAD</a>
+            <a href="Productos/Conectividad/Conectividad.html" class="has-dropdown">CONECTIVIDAD</a>
             <div class="dropdown-menu">
                 <div class="dropdown-content">
                     <div class="dropdown-column">
@@ -112,7 +112,7 @@ session_start();
         </div>
 
         <div class="nav-container">
-            <a href="#" class="has-dropdown">CONSOLA</a>
+            <a href="Productos/Consola/Consola.html" class="has-dropdown">CONSOLA</a>
             <div class="dropdown-menu">
                 <div class="dropdown-content">
                     <div class="dropdown-column">
