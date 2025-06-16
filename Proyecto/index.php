@@ -20,6 +20,7 @@ session_start();
 </head>
 
 <body>
+<div class="sticky-wrapper">  
     <header>
         <img src="Image/Logo.png" alt="Logo de InnovaSys">
         <h1>INNOVASYS</h1>
@@ -196,6 +197,7 @@ session_start();
 
         <a href="Catalogo/catalogo.html" class="catalogo">CATÁLOGO</a>
     </nav>
+</div> <!-- Cierre de sticky-wrapper -->
 
     <main>
         <!-- Carrusel de Promociones Mejorado -->
