@@ -18,8 +18,8 @@ session_start();
 
 <body>
     <!-- CABECERA -->
-    <header>
-        <img src="../Image/Logo.png" alt="Logo de InnovaSys">
+   <header>
+        <a href="../index.php"><img src="../Image/Logo.png" alt="Logo de InnovaSys"></a>
         <h1>INNOVASYS</h1>
         <div style="display: flex; align-items: center; gap: 10px;">
             <?php if (isset($_SESSION['nombre'])): ?>
@@ -39,10 +39,164 @@ session_start();
             <?php endif; ?>
         </div>
     </header>
+   
 
+   
     <!-- MENÚ DE NAVEGACIÓN -->
     <nav>
-        <!-- ... (mantén igual tu código de navegación existente) ... -->
+      <div class="nav-container">
+        <a href="#" class="has-dropdown">ACCESORIOS</a>
+        <div class="dropdown-menu">
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <div class="category-title">ACCESORIO</div>
+              <a href="#" class="dropdown-link">MOCHILA</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">AURICULAR</div>
+              <a href="#" class="dropdown-link">AUX</a>
+              <a href="#" class="dropdown-link">BLUETOOTH</a>
+              <a href="#" class="dropdown-link">USB</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">MOTO A BATERÍA</div>
+              <a href="#" class="dropdown-link">RECARGABLE</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">GRABADORA</div>
+              <a href="#" class="dropdown-link">EXTERNO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-container">
+        <a href="#" class="has-dropdown">ALMACENAMIENTO</a>
+        <div class="dropdown-menu">
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <div class="category-title">SMARTWATCH</div>
+              <a href="#" class="dropdown-link">MÓVIL</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">PARLANTE</div>
+              <a href="#" class="dropdown-link">AUX</a>
+              <a href="#" class="dropdown-link">PORTÁTIL</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-container">
+        <a href="#" class="has-dropdown">CONECTIVIDAD</a>
+        <div class="dropdown-menu">
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <div class="category-title">MICRÓFONO</div>
+              <a href="#" class="dropdown-link">USB</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">CÁMARA</div>
+              <a href="#" class="dropdown-link">USB</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">ADAPTADOR</div>
+              <a href="#" class="dropdown-link">HDMI</a>
+              <a href="#" class="dropdown-link">VGA</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">COMBO</div>
+              <a href="#" class="dropdown-link">TECLADO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-container">
+        <a href="#" class="has-dropdown">CONSOLA</a>
+        <div class="dropdown-menu">
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <div class="category-title">STREAMING</div>
+              <a href="#" class="dropdown-link">CHROMECAST</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">PISCINA</div>
+              <a href="#" class="dropdown-link">CIRCULAR</a>
+              <a href="#" class="dropdown-link">DESMONTABLE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-container">
+        <a href="#" class="has-dropdown">COMPUTACIÓN</a>
+        <div class="dropdown-menu">
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <div class="category-title">ENCLOSURE</div>
+              <a href="#" class="dropdown-link">USB</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">EXTENSOR</div>
+              <a href="#" class="dropdown-link">HUB</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">CANDADO</div>
+              <a href="#" class="dropdown-link">PORTÁTIL</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">MOUSE</div>
+              <a href="#" class="dropdown-link">USB</a>
+              <a href="#" class="dropdown-link">WIRELESS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-container">
+        <a href="#" class="has-dropdown">ELECTRODOMÉSTICOS</a>
+        <div class="dropdown-menu">
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <div class="category-title">CABLE</div>
+              <a href="#" class="dropdown-link">USB</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">PANEL</div>
+              <a href="#" class="dropdown-link">SOLAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-container">
+        <a href="#" class="has-dropdown">MÓVIL</a>
+        <div class="dropdown-menu">
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <div class="category-title">SOPORTE</div>
+              <a href="#" class="dropdown-link">MONITOR</a>
+              <a href="#" class="dropdown-link">TELEVISOR</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">CARRO A BATERÍA</div>
+              <a href="#" class="dropdown-link">RECARGABLE</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">FOCOS</div>
+              <a href="#" class="dropdown-link">LED</a>
+            </div>
+            <div class="dropdown-column">
+              <div class="category-title">TECLADO</div>
+              <a href="#" class="dropdown-link">USB</a>
+              <a href="#" class="dropdown-link">WIRELESS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="catalogo">CATÁLOGO</a>
     </nav>
 
     <!-- CONTENIDO PRINCIPAL -->

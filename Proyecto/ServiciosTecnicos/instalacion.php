@@ -53,21 +53,25 @@ echo "<!DOCTYPE html>
 
     <!-- CABECERA -->
     <header>
-        <table width='100%' bgcolor='white' cellpadding='0' cellspacing='0' border='0'>
-            <tr>
-                <td align='center' width='20%'>
-                    <img src='../Image/Logo.png' alt='Logo' width='130' />
-                </td>
-                <td align='center' width='60%'>
-                    <font face='Fugaz One' size='7' color='#0e3b7c'>
-                        <strong>INNOVASYS</strong>
-                    </font>
-                </td>
-                <td align='center' width='20%'>
-                    <font face='Tomorrow' size='2' color='#0e3b7c'></font>
-                </td>
-            </tr>
-        </table>
+        <img src="../Image/Logo.png" alt="Logo de InnovaSys">
+        <h1>&nbsp;INNOVASYS&nbsp;</h1>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <?php if (isset($_SESSION['nombre'])): ?>
+                <span style="margin-right: 10px;">👤 <?php echo htmlspecialchars($_SESSION['nombre']); ?></span>
+                <a href="IniciarSesion/logout.php" class="login-btn">
+                    <span style="margin-right: 10px;"><i>Cerrar Sesión</i></span>
+                </a>
+            <?php else: ?>
+                <a href="IniciarSesion/sesion.php" class="login-btn" style="display: flex; align-items: center;">
+                    <img src="../Image/user.png" alt="Usuario" style="height: 20px; margin-right: 5px;">
+                    <span><i>Iniciar Sesión</i></span>
+                </a>
+                <a href="IniciarSesion/registros.php" class="login-btn" style="display: flex; align-items: center;">
+                    <img src="../Image/user.png" alt="Usuario" style="height: 20px; margin-right: 5px;">
+                    <span><i>Regístrate</i></span>
+                </a>
+            <?php endif; ?>
+        </div>
     </header>
 
     <!-- CUERPO -->
@@ -91,44 +95,35 @@ echo "<!DOCTYPE html>
 
     <!-- PIE DE PÁGINA -->
     <footer>
-        <table width='100%' border='0' cellspacing='0' cellpadding='10' bgcolor='#16345b'>
-            <tr valign='middle'>
-                <td width='15%' align='left'>
-                    <img src='../Image/Logo2.png' alt='Logo de InnovaSys' width='120' />
-                </td>
-                <td width='25%' align='left'>
-                    <font color='white' face='Arial, sans-serif' size='2'>
-                        <strong>InnovaSys</strong> es una tienda de productos electrónicos que lleva 12 años trabajando
-                        en el sector mayorista.
-                    </font>
-                </td>
-                <td width='30%' align='center'>
-                    <font color='white' face='Arial, sans-serif' size='3'>
-                        <strong><u>Redes Sociales</u></strong><br><br>
-                    </font>
-                    <table border='0' cellspacing='10' cellpadding='10'>
-                        <tr>
-                            <td><a href='#'><img src='../Image/redes/facebook.png' width='40' alt='Facebook'></a></td>
-                            <td><a href='#'><img src='../Image/redes/instagram.png' width='40' alt='Instagram'></a></td>
-                            <td><a href='#'><img src='../Image/redes/whatsapp.png' width='40' alt='Chat'></a></td>
-                            <td><a href='#'><img src='../Image/redes/linkedin.png' width='40' alt='LinkedIn'></a></td>
-                        </tr>
-                    </table>
-                </td>
-                <td width='30%' align='center'>
-                    <font color='white' face='Arial, sans-serif' size='2'>
-                        <b><strong>📍 Ubicación</strong></b><br>
-                        <strong>Sede Quito</strong><br>
-                        Av. Gral. Rumiñahui S/N, Sangolquí 171103 <br>
-                        📞 (04) 373-2131
-                    </font><br>
-                    <iframe
-                        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.768446243726!2d-78.44301499999999!3d-0.3148246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5bd12538eb13b%3A0x907c61f1abbe45ab!2sUniversidad%20de%20las%20Fuerzas%20Armadas%20ESPE!5e0!3m2!1ses-419!2sec!4v1715704600000!5m2!1ses-419!2sec'
-                        width='75%' height='100' allowfullscreen='' loading='lazy'>
-                    </iframe>
-                </td>
-            </tr>
-        </table>
+        <div class="footer-container">
+            <div class="footer-section logo-section">
+                <img src="../Image/Logo2.png" alt="Logo de InnovaSys" class="footer-logo">
+                <p class="footer-description">InnovaSys es una tienda de productos electrónicos que lleva 12 años
+                    trabajando en el sector mayorista.</p>
+            </div>
+
+            <div class="footer-section location-section">
+                <h3 class="footer-title">📍 Ubicación</h3>
+                <div class="location-info">
+                    <p class="location-name"><strong>Sede Quito</strong></p>
+                    <p class="location-address">Av. Gral. Rumiñahui S/N, Sangolquí 171103</p>
+                    <p class="location-phone">📞 (04) 373-2131</p>
+                </div>
+            </div>
+
+            <div class="footer-section social-section">
+                <h3 class="footer-title">Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-link"><img src="../Image/Redes/facebook.png" alt="Facebook"></a>
+                    <a href="#" class="social-link"><img src="../Image/Redes/instagram.png" alt="Instagram"></a>
+                    <a href="#" class="social-link"><img src="../Image/Redes/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#" class="social-link"><img src="../Image/Redes/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2023 InnovaSys - Todos los derechos reservados</p>
+        </div>
     </footer>
 
     </body>
