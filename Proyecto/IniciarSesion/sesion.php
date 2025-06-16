@@ -1,47 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION['nombre'])) {
-    header("Location: ../index.php");
-    exit;
-}
-
-$error = $_GET['error'] ?? "";
-
-$mensaje = "";
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $u = trim($_POST["nombre"] ?? "");
-    $p = trim($_POST["password"] ?? "");
-
-    if (!$u || !$p) {
-        $mensaje = "Completa todos los campos.";
-    } else {
-        $file = __DIR__ . "/cuentas.txt";
-        if (!file_exists($file)) {
-            header("Location: register.php?error=1");
-            exit;
-        } else {
-            $valid = false;
-            foreach (file($file, FILE_IGNORE_NEW_LINES) as $line) {
-                list($ux, , $px) = explode("|", $line);
-                if ($ux === $u && $px === $p) {
-                    $valid = true;
-                    break;
-                }
-            }
-            if ($valid) {
-                session_regenerate_id(true);
-                $_SESSION['nombre'] = $u;
-                if (isset($_POST['remember'])) {
-                    setcookie("remember", $u, time() + 7*24*60*60, "/", "", false, true);
-                }
-                header("Location: ../index.php");
-                exit;
-            } else {
-                $mensaje = "Usuario o contraseña incorrectos.";
-            }
-        }
-    }
-}
+$error = isset($_GET['error']) ? $_GET['error'] : "";
 ?>
 <!DOCTYPE html>
 <html lang="es">
