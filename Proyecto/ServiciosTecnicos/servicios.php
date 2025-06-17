@@ -18,6 +18,7 @@ session_start();
 
 <body>
     <!-- CABECERA -->
+<div class="sticky-wrapper"> 
    <header>
         <a href="../index.php"><img src="../Image/Logo.png" alt="Logo de InnovaSys"></a>
          <h1>&nbsp;INNOVASYS&nbsp;</h1>
@@ -196,7 +197,7 @@ session_start();
 
         <a href="Catalogo/catalogo.html" class="catalogo">CATÁLOGO</a>
     </nav>
-
+</div>
     <!-- CONTENIDO PRINCIPAL -->
     <main class="main-servicios">
         <section class="intro">
