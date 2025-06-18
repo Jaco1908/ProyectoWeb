@@ -151,6 +151,7 @@ body {
 }
 
 /* Cuadro deslizable para marcas */
+/* Cuadro deslizable para marcas */
 .brands-scrollable {
     max-height: 200px;
     overflow-y: auto;

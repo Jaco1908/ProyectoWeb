@@ -42,7 +42,8 @@
    
 
    
-    <!-- MENÚ DE NAVEGACIÓN -->
+    <!-- MENÚ DE NAVEGACIÓN .. -->
+   
     <nav>
       <div class="nav-container">
         <a href="../Accesorios/Accesorios.php" class="has-dropdown">ACCESORIOS</a>
