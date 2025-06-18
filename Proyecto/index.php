@@ -112,7 +112,7 @@ session_start();
         </div>
 
         <div class="nav-container">
-            <a href="Productos/Accesorios/Accesorios.html" class="has-dropdown">CONSOLA</a>
+            <a href="Productos/Consola/Consola.html" class="has-dropdown">CONSOLA</a>
             <div class="dropdown-menu">
                 <div class="dropdown-content">
                     <div class="dropdown-column">
