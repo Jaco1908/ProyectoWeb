@@ -348,7 +348,7 @@
                             <div class="product-grid">
                                 <div class="product-card">
                                     <div class="product-image">
-                                        <img src="../../Image/Productos/Accesorios/Epson/Bandeja.jpg" alt="Producto">
+                                        <img src="../../Image/Productos/Accesorios/Epson/Bandeja.png" alt="Producto">
                                     </div>
                                     <div class="product-info">
                                         <h3>BANDEJA EPSON PARA IMPRESORA MULTIFUNCIÓN COLOR WORKFORCES</h3>
@@ -359,7 +359,7 @@
 
                                 <div class="product-card">
                                     <div class="product-image">
-                                        <img src="../../Image/Productos/Accesorios/Genius/CableC.jpg" alt="Producto">
+                                        <img src="../../Image/Productos/Accesorios/Genius/CableC.png" alt="Producto">
                                     </div>
                                     <div class="product-info">
                                         <h3>CABLE GENIUS ACC-A2CC TIPO A-C/CARGA RÁPIDA</h3>
@@ -370,7 +370,7 @@
 
                                 <div class="product-card">
                                     <div class="product-image">
-                                        <img src="../../Image/Productos/Accesorios/Genius/TecladoMouseKm.jpg" alt="Producto">
+                                        <img src="../../Image/Productos/Accesorios/Genius/TecladoMouseKm.png" alt="Producto">
                                     </div>
                                     <div class="product-info">
                                         <h3>COMBO TECLADO Y MOUSE GENIUS KM-200 USB NEGRO</h3>
@@ -381,7 +381,7 @@
 
                                 <div class="product-card">
                                     <div class="product-image">
-                                        <img src="../../Image/Productos/Accesorios/Speedmind/BarraSonido.jpg" alt="Producto">
+                                        <img src="../../Image/Productos/Accesorios/Speedmind/BarraSonido.png" alt="Producto">
                                     </div>
                                     <div class="product-info">
                                         <h3>BARRA DE SONIDO SPEEDMIND SB905 2.0/ 30W</h3>
@@ -392,7 +392,7 @@
 
                                 <div class="product-card">
                                     <div class="product-image">
-                                        <img src="../../Image/Productos/Accesorios/Speedmind/Mochila.jpg" alt="Producto">
+                                        <img src="../../Image/Productos/Accesorios/Speedmind/Mochila.png" alt="Producto">
                                     </div>
                                     <div class="product-info">
                                         <h3>MOCHILA SPEEDMIND SMMOL04 HASTA 15.6 COLOR GRIS CON BLOQUEO</h3>
@@ -403,7 +403,7 @@
 
                                 <div class="product-card">
                                     <div class="product-image">
-                                        <img src="../../Image/Productos/Accesorios/Genius/MouseMini.jpg" alt="Producto">
+                                        <img src="../../Image/Productos/Accesorios/Genius/MouseMini.png" alt="Producto">
                                     </div>
                                     <div class="product-info">
                                         <h3>MOUSE GENIUS WIRELESS MINI </h3>
