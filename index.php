@@ -157,7 +157,7 @@ session_start();
             </div>
 
             <div class="nav-container">
-                <a href="#" class="has-dropdown">ELECTRODOMÉSTICOS</a>
+                <a href="Productos/Electrodomesticos/Electrodomesticos.php" class="has-dropdown">ELECTRODOMÉSTICOS</a>
                 <div class="dropdown-menu">
                     <div class="dropdown-content">
                         <div class="dropdown-column">
