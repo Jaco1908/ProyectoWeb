@@ -1,0 +1,159 @@
+/* Estilos base */
+.catalogo-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.main-title {
+    font-family: 'Fugaz One', sans-serif;
+    color: #0e3b7c;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.main-subtitle {
+    color: #666;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+/* Grid de catálogos */
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Tarjetas */
+.catalogo-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    border: 1px solid #eaeaea;
+}
+
+.catalogo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.card-icon img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.card-title {
+    font-family: 'Tomorrow', sans-serif;
+    color: #0e3b7c;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 0 0.75rem;
+    font-weight: 700;
+}
+
+.card-description {
+    color: #666;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    min-height: 3.5rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.file-info {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #0e3b7c;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #1e5da3;
+    transform: translateY(-2px);
+}
+
+/* Tarjeta destacada */
+.destacado {
+    border: 1px solid #e41e26;
+}
+
+.destacado .download-btn {
+    background: #e41e26;
+}
+
+.destacado .download-btn:hover {
+    background: #c62828;
+}
+
+.card-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: #e41e26;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(230, 30, 38, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .catalogo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+    
+    .main-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalogo-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .catalogo-card {
+        padding: 1.5rem;
+    }
+}
