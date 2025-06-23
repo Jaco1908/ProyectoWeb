@@ -173,7 +173,7 @@ session_start();
             </div>
 
             <div class="nav-container">
-                <a href="#" class="has-dropdown">MÓVIL</a>
+                <a href="Productos/Movil/Movil.php" class="has-dropdown">MÓVIL</a>
                 <div class="dropdown-menu">
                     <div class="dropdown-content">
                         <div class="dropdown-column">
