@@ -2,46 +2,46 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACCESORIOS</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anta&family=Concert+One&family=Fugaz+One&family=Gruppo&family=Limelight&family=Squada+One&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="Conectividad.css">
-    <link rel="stylesheet" href="../../CSS/Plantilla/Footer.css">
-    <link rel="stylesheet" href="../../CSS/Plantilla/Header.css">
-    <link rel="stylesheet" href="../../CSS/Plantilla/Nav.css">
-    <link rel="shortcut icon" href="../../Image/Logo.png">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACCESORIOS</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anta&family=Concert+One&family=Fugaz+One&family=Gruppo&family=Limelight&family=Squada+One&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="Conectividad.css">
+  <link rel="stylesheet" href="../../CSS/Plantilla/Footer.css">
+  <link rel="stylesheet" href="../../CSS/Plantilla/Header.css">
+  <link rel="stylesheet" href="../../CSS/Plantilla/Nav.css">
+  <link rel="shortcut icon" href="../../Image/Logo.png">
+
 </head>
 
 <body>
-<div class="sticky-wrapper"> 
-   <header>
-        <a href="../../index.php"><img src="../../Image/Logo.png" alt="Logo de InnovaSys"></a>
-        <h1>INNOVASYS</h1>
-        <div style="display: flex; align-items: center; gap: 10px;">
-            <?php if (isset($_SESSION['nombre'])): ?>
-                <span style="margin-right: 10px;">👤 <?php echo htmlspecialchars($_SESSION['nombre']); ?></span>
-                <a href="../../IniciarSesion/logout.php" class="login-btn">
-                    <span style="margin-right: 10px;"><i>Cerrar Sesión</i></span>
-                </a>
-            <?php else: ?>
-                <a href="../../IniciarSesion/sesion.php" class="login-btn" style="display: flex; align-items: center;">
-                    <img src="../../Image/user.png" alt="Usuario" style="height: 20px; margin-right: 5px;">
-                    <span><i>Iniciar Sesión</i></span>
-                </a>
-                <a href="../../IniciarSesion/registros.php" class="login-btn" style="display: flex; align-items: center;">
-                    <img src="../../Image/user.png" alt="Usuario" style="height: 20px; margin-right: 5px;">
-                    <span><i>Regístrate</i></span>
-                </a>
-            <?php endif; ?>
-        </div>
+  <div class="sticky-wrapper">
+    <header>
+      <a href="../../index.php"> <img src="../../Image/Logo.png" alt="Logo de InnovaSys"></a>
+      <h1>INNOVASYS</h1>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <?php if (isset($_SESSION['nombre'])): ?>
+          <span style="margin-right: 10px;">👤 <?php echo htmlspecialchars($_SESSION['nombre']); ?></span>
+          <a href="../../IniciarSesion/logout.php" class="login-btn">
+            <span style="margin-right: 10px;"><i>Cerrar Sesión</i></span>
+          </a>
+        <?php else: ?>
+          <a href="../../IniciarSesion/sesion.php" class="login-btn" style="display: flex; align-items: center;">
+            <img src="../../Image/user.png" alt="Usuario" style="height: 20px; margin-right: 5px;">
+            <span><i>Iniciar Sesión</i></span>
+          </a>
+          <a href="../../IniciarSesion/registros.php" class="login-btn" style="display: flex; align-items: center;">
+            <img src="../../Image/user.png" alt="Usuario" style="height: 20px; margin-right: 5px;">
+            <span><i>Regístrate</i></span>
+          </a>
+        <?php endif; ?>
+      </div>
     </header>
-   
 
-   
+
+
     <!-- MENÚ DE NAVEGACIÓN -->
     <nav>
       <div class="nav-container">
@@ -198,157 +198,157 @@
 
       <a href="#" class="catalogo">CATÁLOGO</a>
     </nav>
-</div>
-    
-        <div class="container">
-        <div class="breadcrumb">
-            <a href="../../index.php">Home</a> <span>CONECTIVIDAD</span>
+  </div>
+
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../../index.php">Home</a> <span>CONECTIVIDAD</span>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="sidebar">
+        <div class="filter-section brands-section">
+          <h3>
+            Marcas
+            <a href="#" class="view-all-brands">Ver todas</a>
+          </h3>
+          <div class="brands-scrollable">
+            <ul>
+              <li><a href="#">Samsung</a></li>
+              <li><a href="#">Apple</a></li>
+              <li><a href="#">Xiaomi</a></li>
+              <li><a href="#">Huawei</a></li>
+              <li><a href="#">Sony</a></li>
+              <li><a href="#">LG</a></li>
+              <li><a href="#">Motorola</a></li>
+              <li><a href="#">Nokia</a></li>
+              <li><a href="#">OnePlus</a></li>
+              <li><a href="#">Google</a></li>
+              <li><a href="#">Asus</a></li>
+              <li><a href="#">Lenovo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="sorting-options">
+          <div class="sort-by">
+            <label for="sort-select">Ordenar por:</label>
+            <select id="sort-select" class="sort-select">
+              <option value="default">Orden predominante</option>
+              <option value="popularity">Ordenar por popularidad</option>
+              <option value="latest">Ordenar por los últimos</option>
+              <option value="price-low">Ordenar por precio: bajo a alto</option>
+              <option value="price-high">Ordenar por precio: alto a bajo</option>
+            </select>
+          </div>
         </div>
 
-        <div class="content-wrapper">
-            <div class="sidebar">
-                    <div class="filter-section brands-section">
-                    <h3>
-                        Marcas
-                        <a href="#" class="view-all-brands">Ver todas</a>
-                    </h3>
-                    <div class="brands-scrollable">
-                        <ul>
-                            <li><a href="#">Samsung</a></li>
-                            <li><a href="#">Apple</a></li>
-                            <li><a href="#">Xiaomi</a></li>
-                            <li><a href="#">Huawei</a></li>
-                            <li><a href="#">Sony</a></li>
-                            <li><a href="#">LG</a></li>
-                            <li><a href="#">Motorola</a></li>
-                            <li><a href="#">Nokia</a></li>
-                            <li><a href="#">OnePlus</a></li>
-                            <li><a href="#">Google</a></li>
-                            <li><a href="#">Asus</a></li>
-                            <li><a href="#">Lenovo</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../Image/Productos/Conectividad/Camara/camaraconferencecampro4k.png" alt="Producto">
             </div>
+            <div class="product-info">
+              <h3>BLUE YETI - MICRÓFONO USB PROFESIONAL</h3>
+              <p class="specs">Patrón polar múltiple • Control de ganancia integrado</p>
+              <p class="price-info">Inicia sesión para ver precios</p>
+              <button class="view-btn">Ver producto</button>
+            </div>
+          </div>
 
-            <div class="main-content">
-                <div class="sorting-options">
-                    <div class="sort-by">
-                        <label for="sort-select">Ordenar por:</label>
-                        <select id="sort-select" class="sort-select">
-                            <option value="default">Orden predominante</option>
-                            <option value="popularity">Ordenar por popularidad</option>
-                            <option value="latest">Ordenar por los últimos</option>
-                            <option value="price-low">Ordenar por precio: bajo a alto</option>
-                            <option value="price-high">Ordenar por precio: alto a bajo</option>
-                        </select>
-                    </div>
-                </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/200" alt="Producto">
+            </div>
+            <div class="product-info">
+              <h3>LOGITECH C920 - CÁMARA WEB HD PRO</h3>
+              <p class="specs">1080p a 30fps • Autofocus • Doble micrófono</p>
+              <p class="price-info">Inicia sesión para ver precios</p>
+              <button class="view-btn">Ver producto</button>
+            </div>
+          </div>
 
-                <div class="product-grid">
-    <div class="product-card">
-        <div class="product-image">
-        <img src="../../Image/Productos/Conectividad/Camara/camaraconferencecampro4k.png" alt="Producto">
-        </div>
-        <div class="product-info">
-            <h3>BLUE YETI - MICRÓFONO USB PROFESIONAL</h3>
-            <p class="specs">Patrón polar múltiple • Control de ganancia integrado</p>
-            <p class="price-info">Inicia sesión para ver precios</p>
-            <button class="view-btn">Ver producto</button>
-        </div>
-    </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/200" alt="Producto">
+            </div>
+            <div class="product-info">
+              <h3>ADAPTADOR HDMI A VGA CON AUDIO</h3>
+              <p class="specs">Resolución 1080p • Conexión plug-and-play</p>
+              <p class="price-info">Inicia sesión para ver precios</p>
+              <button class="view-btn">Ver producto</button>
+            </div>
+          </div>
 
-    <div class="product-card">
-        <div class="product-image">
-            <img src="https://via.placeholder.com/200" alt="Producto">
-        </div>
-        <div class="product-info">
-            <h3>LOGITECH C920 - CÁMARA WEB HD PRO</h3>
-            <p class="specs">1080p a 30fps • Autofocus • Doble micrófono</p>
-            <p class="price-info">Inicia sesión para ver precios</p>
-            <button class="view-btn">Ver producto</button>
-        </div>
-    </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/200" alt="Producto">
+            </div>
+            <div class="product-info">
+              <h3>ADAPTADOR VGA A HDMI ACTIVO</h3>
+              <p class="specs">Conversión digital • Soporte Full HD</p>
+              <p class="price-info">Inicia sesión para ver precios</p>
+              <button class="view-btn">Ver producto</button>
+            </div>
+          </div>
 
-    <div class="product-card">
-        <div class="product-image">
-            <img src="https://via.placeholder.com/200" alt="Producto">
-        </div>
-        <div class="product-info">
-            <h3>ADAPTADOR HDMI A VGA CON AUDIO</h3>
-            <p class="specs">Resolución 1080p • Conexión plug-and-play</p>
-            <p class="price-info">Inicia sesión para ver precios</p>
-            <button class="view-btn">Ver producto</button>
-        </div>
-    </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/200" alt="Producto">
+            </div>
+            <div class="product-info">
+              <h3>COMBO TECLADO Y MOUSE INALÁMBRICO LOGITECH MK345</h3>
+              <p class="specs">Teclado QWERTY completo • Alcance de 10m</p>
+              <p class="price-info">Inicia sesión para ver precios</p>
+              <button class="view-btn">Ver producto</button>
+            </div>
+          </div>
 
-    <div class="product-card">
-        <div class="product-image">
-            <img src="https://via.placeholder.com/200" alt="Producto">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/200" alt="Producto">
+            </div>
+            <div class="product-info">
+              <h3>RAZER SEIREN X - MICRÓFONO USB CONDENSER</h3>
+              <p class="specs">Supercardioide • Reducción de ruido</p>
+              <p class="price-info">Inicia sesión para ver precios</p>
+              <button class="view-btn">Ver producto</button>
+            </div>
+          </div>
         </div>
-        <div class="product-info">
-            <h3>ADAPTADOR VGA A HDMI ACTIVO</h3>
-            <p class="specs">Conversión digital • Soporte Full HD</p>
-            <p class="price-info">Inicia sesión para ver precios</p>
-            <button class="view-btn">Ver producto</button>
-        </div>
-    </div>
-
-    <div class="product-card">
-        <div class="product-image">
-            <img src="https://via.placeholder.com/200" alt="Producto">
-        </div>
-        <div class="product-info">
-            <h3>COMBO TECLADO Y MOUSE INALÁMBRICO LOGITECH MK345</h3>
-            <p class="specs">Teclado QWERTY completo • Alcance de 10m</p>
-            <p class="price-info">Inicia sesión para ver precios</p>
-            <button class="view-btn">Ver producto</button>
-        </div>
-    </div>
-
-    <div class="product-card">
-        <div class="product-image">
-            <img src="https://via.placeholder.com/200" alt="Producto">
-        </div>
-        <div class="product-info">
-            <h3>RAZER SEIREN X - MICRÓFONO USB CONDENSER</h3>
-            <p class="specs">Supercardioide • Reducción de ruido</p>
-            <p class="price-info">Inicia sesión para ver precios</p>
-            <button class="view-btn">Ver producto</button>
-        </div>
-    </div>
-</div>
-    <footer>
-        <div class="footer-container">
+        <footer>
+          <div class="footer-container">
             <div class="footer-section logo-section">
-                <img src="../../Image/Logo2.png" alt="Logo de InnovaSys" class="footer-logo">
-                <p class="footer-description">InnovaSys es una tienda de productos electrónicos que lleva 12 años
-                    trabajando en el sector mayorista.</p>
+              <img src="../../Image/Logo2.png" alt="Logo de InnovaSys" class="footer-logo">
+              <p class="footer-description">InnovaSys es una tienda de productos electrónicos que lleva 12 años
+                trabajando en el sector mayorista.</p>
             </div>
 
             <div class="footer-section location-section">
-                <h3 class="footer-title">📍 Ubicación</h3>
-                <div class="location-info">
-                    <p class="location-name"><strong>Sede Quito</strong></p>
-                    <p class="location-address">Av. Gral. Rumiñahui S/N, Sangolquí 171103</p>
-                    <p class="location-phone">📞 (04) 373-2131</p>
-                </div>
+              <h3 class="footer-title">📍 Ubicación</h3>
+              <div class="location-info">
+                <p class="location-name"><strong>Sede Quito</strong></p>
+                <p class="location-address">Av. Gral. Rumiñahui S/N, Sangolquí 171103</p>
+                <p class="location-phone">📞 (04) 373-2131</p>
+              </div>
             </div>
 
             <div class="footer-section social-section">
-                <h3 class="footer-title">Redes Sociales</h3>
-                <div class="social-icons">
-                    <a href="#" class="social-link"><img src="../../Image/Redes/facebook.png" alt="Facebook"></a>
-                    <a href="#" class="social-link"><img src="../../Image/Redes/instagram.png" alt="Instagram"></a>
-                    <a href="#" class="social-link"><img src="../../Image/Redes/whatsapp.png" alt="WhatsApp"></a>
-                    <a href="#" class="social-link"><img src="../../Image/Redes/linkedin.png" alt="LinkedIn"></a>
-                </div>
+              <h3 class="footer-title">Redes Sociales</h3>
+              <div class="social-icons">
+                <a href="#" class="social-link"><img src="../../Image/Redes/facebook.png" alt="Facebook"></a>
+                <a href="#" class="social-link"><img src="../../Image/Redes/instagram.png" alt="Instagram"></a>
+                <a href="#" class="social-link"><img src="../../Image/Redes/whatsapp.png" alt="WhatsApp"></a>
+                <a href="#" class="social-link"><img src="../../Image/Redes/linkedin.png" alt="LinkedIn"></a>
+              </div>
             </div>
-        </div>
-        <div class="footer-copyright">
+          </div>
+          <div class="footer-copyright">
             <p>&copy; 2023 InnovaSys - Todos los derechos reservados</p>
-        </div>
-    </footer>
+          </div>
+        </footer>
 </body>
 
 </html>

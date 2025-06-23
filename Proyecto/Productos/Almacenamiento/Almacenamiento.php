@@ -20,7 +20,7 @@
     <div class="sticky-wrapper">
         <header>
             <div class="header-left">
-                <img src="../../Image/Logo.png" alt="Logo de InnovaSys">
+                <a href="../../index.php"> <img src="../../Image/Logo.png" alt="Logo de InnovaSys"></a>
             </div>
             <div class="header-center">
                 <h1>&nbsp;INNOVASYS&nbsp;</h1>
