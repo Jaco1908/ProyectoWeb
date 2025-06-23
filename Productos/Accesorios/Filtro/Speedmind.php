@@ -201,7 +201,7 @@
     </div>
     <div class="container">
         <div class="breadcrumb">
-            <a href="../../../index.php">Home</a> <a href="../Accesorios.html">Accesorios</a> <span>SPEEDMIND</span>
+            <a href="../../../index.php">Home</a> <a href="../Accesorios.php">Accesorios</a> <span>SPEEDMIND</span>
         </div>
 
         <div class="content-wrapper">

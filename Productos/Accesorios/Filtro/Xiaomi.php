@@ -201,7 +201,7 @@
     </div>
     <div class="container">
         <div class="breadcrumb">
-            <a href="../../../index.php">Home</a> <a href="../Accesorios.html">Accesorios</a> <span>XIAOMI</span>
+            <a href="../../../index.php">Home</a> <a href="../Accesorios.php">Accesorios</a> <span>XIAOMI</span>
         </div>
 
         <div class="content-wrapper">
