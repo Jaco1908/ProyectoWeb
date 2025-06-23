@@ -132,7 +132,7 @@ session_start();
             </div>
 
             <div class="nav-container">
-                <a href="#" class="has-dropdown">COMPUTACIÓN</a>
+                <a href="Productos/Computacion/Computacion.php " class="has-dropdown">COMPUTACIÓN</a>
                 <div class="dropdown-menu">
                     <div class="dropdown-content">
                         <div class="dropdown-column">
