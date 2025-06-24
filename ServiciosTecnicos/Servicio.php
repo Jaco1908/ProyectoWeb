@@ -28,27 +28,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <!-- CABECERA  INICIO-->
-    <header>
-        <a href="../index.php"><img src="../Image/Logo.png" alt="Logo de InnovaSys"></a>
-        <h1>INNOVASYS</h1>
-        <div style="display: flex; align-items: center; gap: 10px;">
-            <?php if (isset($_SESSION['nombre'])): ?>
-                <span style="margin-right: 10px;">👤 <?php echo htmlspecialchars($_SESSION['nombre']); ?></span>
-                <a href="../IniciarSesion/logout.php" class="login-btn">
-                    <span style="margin-right: 10px;"><i>Cerrar Sesión</i></span>
+      <header>
+            <div class="header-left">
+                <a href="../index.php">
+                    <img src="../Image/Logo.png" alt="Logo de InnovaSys">
                 </a>
-            <?php else: ?>
-                <a href="../IniciarSesion/sesion.php" class="login-btn" style="display: flex; align-items: center;">
-                    <img src="../Image/user.png" alt="Usuario" style="height: 20px; margin-right: 5px;">
-                    <span><i>Iniciar Sesión</i></span>
-                </a>
-                <a href="../IniciarSesion/registros.php" class="login-btn" style="display: flex; align-items: center;">
-                    <img src="../Image/user.png" alt="Usuario" style="height: 20px; margin-right: 5px;">
-                    <span><i>Regístrate</i></span>
-                </a>
-            <?php endif; ?>
-        </div>
-    </header>
+            </div>
+            <div class="header-center">
+                <h1>&nbsp;INNOVASYS&nbsp;</h1>
+            </div>
+            <div class="header-right">
+                <?php if (isset($_SESSION['nombre'])): ?>
+                    <span style="margin-right: 10px;">👤 <?php echo htmlspecialchars($_SESSION['nombre']); ?></span>
+                    <a href="IniciarSesion/logout.php" class="login-btn">
+                        <span style="margin-right: 10px;"><i>Cerrar Sesión</i></span>
+                    </a>
+                <?php else: ?>
+                    <a href="IniciarSesion/sesion.php" class="login-btn">
+                        <img src="../Image/user.png" alt="Usuario" style="height: 20px; margin-right: 5px;">
+                        <span><i>Iniciar Sesión</i></span>
+                    </a>
+                    <a href="IniciarSesion/registros.php" class="login-btn">
+                        <img src="../Image/user.png" alt="Usuario" style="height: 20px; margin-right: 5px;">
+                        <span><i>Regístrate</i></span>
+                    </a>
+                <?php endif; ?>
+            </div>
+        </header>
 
     <!-- CUERPO -->
     <div class="container">

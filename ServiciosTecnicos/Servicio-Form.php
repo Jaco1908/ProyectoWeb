@@ -21,7 +21,7 @@ $servicioSeleccionado = isset($_GET['servicio']) ? htmlspecialchars($_GET['servi
 
 <body>
     <!-- CABECERA -->
-<header>
+      <header>
             <div class="header-left">
                 <a href="../index.php">
                     <img src="../Image/Logo.png" alt="Logo de InnovaSys">
