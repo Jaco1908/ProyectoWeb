@@ -209,7 +209,7 @@
                 <div class="filter-section brands-section">
                     <h3>
                         Marcas
-                        <a href="#" class="view-all-brands">Ver todas</a>
+                        <a href="../Accesorios.php" class="view-all-brands">Ver todas</a>
                     </h3>
                     <div class="brands-scrollable">
                         <ul>
