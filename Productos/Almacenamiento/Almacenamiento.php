@@ -134,7 +134,7 @@
             </div>
 
             <div class="nav-container">
-                <a href="#" class="has-dropdown">COMPUTACIÓN</a>
+                <a href="../Computacion/Computacion.php" class="has-dropdown">COMPUTACIÓN</a>
                 <div class="dropdown-menu">
                     <div class="dropdown-content">
                         <div class="dropdown-column">
@@ -159,7 +159,7 @@
             </div>
 
             <div class="nav-container">
-                <a href="#" class="has-dropdown">ELECTRODOMÉSTICOS</a>
+                <a href="../Electrodomesticos/Electrodomesticos.php" class="has-dropdown">ELECTRODOMÉSTICOS</a>
                 <div class="dropdown-menu">
                     <div class="dropdown-content">
                         <div class="dropdown-column">
@@ -175,7 +175,7 @@
             </div>
 
             <div class="nav-container">
-                <a href="#" class="has-dropdown">MÓVIL</a>
+                <a href="../Movil/Movil.php" class="has-dropdown">MÓVIL</a>
                 <div class="dropdown-menu">
                     <div class="dropdown-content">
                         <div class="dropdown-column">
