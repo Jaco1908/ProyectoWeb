@@ -156,7 +156,7 @@
       </div>
 
       <div class="nav-container">
-        <a href="../Electrodomesticos/Electrodomestico.php" class="has-dropdown">ELECTRODOMÉSTICOS</a>
+        <a href="../Electrodomesticos/Electrodomesticos.php" class="has-dropdown">ELECTRODOMÉSTICOS</a>
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <div class="dropdown-column">
