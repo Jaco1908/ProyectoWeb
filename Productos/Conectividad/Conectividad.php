@@ -319,37 +319,37 @@
             </div>
           </div>
         </div>
-        <footer>
-          <div class="footer-container">
+          <footer>
+        <div class="footer-container">
             <div class="footer-section logo-section">
-              <img src="../../Image/Logo2.png" alt="Logo de InnovaSys" class="footer-logo">
-              <p class="footer-description">InnovaSys es una tienda de productos electrónicos que lleva 12 años
-                trabajando en el sector mayorista.</p>
+                <img src="../../Image/Logo2.png" alt="Logo de InnovaSys" class="footer-logo">
+                <p class="footer-description">InnovaSys es una tienda de productos electrónicos que lleva 12 años
+                    trabajando en el sector mayorista.</p>
             </div>
 
             <div class="footer-section location-section">
-              <h3 class="footer-title">📍 Ubicación</h3>
-              <div class="location-info">
-                <p class="location-name"><strong>Sede Quito</strong></p>
-                <p class="location-address">Av. Gral. Rumiñahui S/N, Sangolquí 171103</p>
-                <p class="location-phone">📞 (04) 373-2131</p>
-              </div>
+                <h3 class="footer-title">📍 Ubicación</h3>
+                <div class="location-info">
+                    <p class="location-name"><strong>Sede Quito</strong></p>
+                    <p class="location-address">Av. Gral. Rumiñahui S/N, Sangolquí 171103</p>
+                    <p class="location-phone">📞 (04) 373-2131</p>
+                </div>
             </div>
 
             <div class="footer-section social-section">
-              <h3 class="footer-title">Redes Sociales</h3>
-              <div class="social-icons">
-                <a href="#" class="social-link"><img src="../../Image/Redes/facebook.png" alt="Facebook"></a>
-                <a href="#" class="social-link"><img src="../../Image/Redes/instagram.png" alt="Instagram"></a>
-                <a href="#" class="social-link"><img src="../../Image/Redes/whatsapp.png" alt="WhatsApp"></a>
-                <a href="#" class="social-link"><img src="../../Image/Redes/linkedin.png" alt="LinkedIn"></a>
-              </div>
+                <h3 class="footer-title">Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-link"><img src="../../Image/Redes/facebook.png" alt="Facebook"></a>
+                    <a href="#" class="social-link"><img src="../../Image/Redes/instagram.png" alt="Instagram"></a>
+                    <a href="#" class="social-link"><img src="../../Image/Redes/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#" class="social-link"><img src="../../Image/Redes/linkedin.png" alt="LinkedIn"></a>
+                </div>
             </div>
-          </div>
-          <div class="footer-copyright">
+        </div>
+        <div class="footer-copyright">
             <p>&copy; 2023 InnovaSys - Todos los derechos reservados</p>
-          </div>
-        </footer>
+        </div>
+    </footer>
 </body>
 
 </html>
