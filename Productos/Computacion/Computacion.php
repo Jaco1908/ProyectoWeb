@@ -199,7 +199,7 @@ session_start();
                 </div>
             </div>
 
-            <a href="../../Catalogo/catalogo.html" class="catalogo">CATÁLOGO</a>
+            <a href="../../Catalogo/catalogo.php" class="catalogo">CATÁLOGO</a>
         </nav>
     </div>
     <div class="container">

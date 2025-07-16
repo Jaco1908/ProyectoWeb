@@ -198,7 +198,7 @@
         </div>
       </div>
 
-      <a href="#" class="catalogo">CATÁLOGO</a>
+      <a href="../../Catalogo/" class="catalogo">CATÁLOGO</a>
     </nav>
 </div>
     <div class="container">
