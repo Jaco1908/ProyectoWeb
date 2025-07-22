@@ -249,74 +249,74 @@
                 <div class="product-grid">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="https://via.placeholder.com/200" alt="Producto">
+                            <img src="../../Image/Productos/Consola/Accesorios_Gaming/GOOGLE CHROMECAST 4K.png" alt="Producto">
                         </div>
-                        <div class="product-info">
-                            <h3>ELGATO STREAM DECK MK.2 - CONTROLADOR PARA STREAMING</h3>
-                           <p class="specs">15 teclas programables • Integración con OBS/Twitch</p>
-                           <p class="price-info">Inicia sesión para ver precios</p>
-                            <button class="view-btn">Ver producto</button>
-                        </div>
+                         <div class="product-info">
+                          <h3>GOOGLE CHROMECAST 4K</h3>
+                          <p class="specs">Streaming en 4K HDR • Compatible con Google TV • Control remoto</p>
+                          <p class="price-info">Inicia sesión para ver precios</p>
+                          <button class="view-btn">Ver producto</button>
+                      </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="https://via.placeholder.com/200" alt="Producto">
+                            <img src="../../Image/Productos/Consola/Accesorios_Gaming/AMAZON FIRE TV STICK 4K.png" alt="Producto">
                         </div>
-                        <div class="product-info">
-                            <h3>RAZER RIPSHAW HD - CAPTURADORA DE VIDEO 4K</h3>
-                             <p class="specs">Resolución 1080p/60fps • Conexión USB 3.0</p>
-                             <p class="price-info">Inicia sesión para ver precios</p>
-                            <button class="view-btn">Ver producto</button>
-                        </div>
+                       <div class="product-info">
+                          <h3>AMAZON FIRE TV STICK 4K</h3>
+                          <p class="specs">Alexa integrado • Dolby Vision • 8GB almacenamiento</p>
+                          <p class="price-info">Inicia sesión para ver precios</p>
+                          <button class="view-btn">Ver producto</button>
+                      </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="https://via.placeholder.com/200" alt="Producto">
+                            <img src="../../Image/Productos/Consola/Consolas/NVIDIA SHIELD TV PRO.png" alt="Producto">
                         </div>
                         <div class="product-info">
-                            <h3>GOXLR MINI - MEZCLADOR PARA STREAMERS</h3>
-                             <p class="specs">4 canales de audio • Efectos de voz integrados</p>
-                             <p class="price-info">Inicia sesión para ver precios</p>
-                            <button class="view-btn">Ver producto</button>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/200" alt="Producto">
-                        </div>
-                        <div class="product-info">
-                            <h3>RODE STREAMER X - INTERFAZ DE AUDIO PROFESIONAL</h3>
-                              <p class="specs">2 entradas XLR • Compatible con PC/Consolas</p>
-                              <p class="price-info">Inicia sesión para ver precios</p>
-                            <button class="view-btn">Ver producto</button>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/200" alt="Producto">
-                        </div>
-                        <div class="product-info">
-                            <h3>AVERMEDIA LIVE GAMER ULTRA - CAPTURADORA 4K</h3>
-                             <p class="specs">Passthrough 4K60 HDR • Compatible con PS5/Xbox</p>
-                              <p class="price-info">Inicia sesión para ver precios</p>
-                            <button class="view-btn">Ver producto</button>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/200" alt="Producto">
-                        </div>
-                        <div class="product-info">
-                            <h3>ELGATO WAVE 3 - MICRÓFONO USB PARA STREAMING</h3>
-                                        <p class="specs">Calidad broadcast • Filtro anti-pop integrado</p>
+                            <h3>NVIDIA SHIELD TV PRO</h3>
+                            <p class="specs">AI upscaling 4K • GeForce Now • 3GB RAM</p>
                             <p class="price-info">Inicia sesión para ver precios</p>
                             <button class="view-btn">Ver producto</button>
                         </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../../Image/Productos/Consola/Accesorios_Gaming/ROKU ULTRA 2023.png" alt="Producto">
+                        </div>
+                        <div class="product-info">
+                          <h3>ROKU ULTRA 2023</h3>
+                          <p class="specs">Dolby Vision/HDR10+ • Ethernet incluido • Control por voz</p>
+                          <p class="price-info">Inicia sesión para ver precios</p>
+                          <button class="view-btn">Ver producto</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../../Image/Productos/Consola/Accesorios_Gaming/XBOX SERIES.png" alt="Producto">
+                        </div>
+                         <div class="product-info">
+                            <h3>XBOX SERIES S</h3>
+                            <p class="specs">512GB SSD • 1440p/120fps • Game Pass incluido</p>
+                            <p class="price-info">Inicia sesión para ver precios</p>
+                            <button class="view-btn">Ver producto</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../../Image/Productos/Consola/Consolas/PLAYSTATION 5 DIGITAL EDITION.png" alt="Producto">
+                        </div>
+                                      <div class="product-info">
+                          <h3>PLAYSTATION 5 DIGITAL EDITION</h3>
+                          <p class="specs">825GB SSD • 4K/120Hz • Sin lector de discos</p>
+                          <p class="price-info">Inicia sesión para ver precios</p>
+                          <button class="view-btn">Ver producto</button>
+                      </div>
                     </div>
                 </div>
             </div>
