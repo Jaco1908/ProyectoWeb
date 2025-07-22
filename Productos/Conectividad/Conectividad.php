@@ -294,7 +294,7 @@ session_start();
 
                                 <div class="product-card">
                                     <div class="product-image">
-                                    <img src="https://via.placeholder.com/200" alt="Producto">
+                                    <img src="../../Image/Productos/Conectividad/Camara/LOGITECH C920 - CÁMARA WEB HD PRO.png" alt="Producto">
                                     </div>
                                     <div class="product-info">
                                     <h3>LOGITECH C920 - CÁMARA WEB HD PRO</h3>
@@ -306,7 +306,7 @@ session_start();
 
                                 <div class="product-card">
                                     <div class="product-image">
-                                    <img src="https://via.placeholder.com/200" alt="Producto">
+                                    <img src="../../Image/Productos/Conectividad/Adaptador/ADAPTADOR HDMI A VGA CON AUDIO.png" alt="Producto">
                                     </div>
                                     <div class="product-info">
                                     <h3>ADAPTADOR HDMI A VGA CON AUDIO</h3>
@@ -318,7 +318,7 @@ session_start();
 
                                 <div class="product-card">
                                     <div class="product-image">
-                                    <img src="https://via.placeholder.com/200" alt="Producto">
+                                    <img src="../../Image/Productos/Conectividad/Adaptador/ADAPTADOR VGA A HDMI ACTIVO.png" alt="Producto">
                                     </div>
                                     <div class="product-info">
                                     <h3>ADAPTADOR VGA A HDMI ACTIVO</h3>
@@ -330,7 +330,7 @@ session_start();
 
                                 <div class="product-card">
                                     <div class="product-image">
-                                    <img src="https://via.placeholder.com/200" alt="Producto">
+                                    <img src="../../Image/Productos/Conectividad/Combo/COMBO TECLADO Y MOUSE INALÁMBRICO LOGITECH MK345.png" alt="Producto">
                                     </div>
                                     <div class="product-info">
                                     <h3>COMBO TECLADO Y MOUSE INALÁMBRICO LOGITECH MK345</h3>
@@ -342,7 +342,7 @@ session_start();
 
                                 <div class="product-card">
                                     <div class="product-image">
-                                    <img src="https://via.placeholder.com/200" alt="Producto">
+                                    <img src="../../Image/Productos/Conectividad/Microfono/RAZER SEIREN X - MICRÓFONO USB CONDENSER.png" alt="Producto">
                                     </div>
                                     <div class="product-info">
                                     <h3>RAZER SEIREN X - MICRÓFONO USB CONDENSER</h3>
